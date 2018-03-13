@@ -1,3 +1,4 @@
+/*----------------------------------------------------------GENERAL STRUCTURE-----------------------------------------*/
 body{
     background-color: #626262;
 }
@@ -9,303 +10,182 @@ body{
     box-shadow: 0px 2px 7px 4px #424242;
 }
 
-.titlerow, .subtitle{   
+.titlerow{   
     color:yellow;
-    border-left:20px solid #626262;
-    border-top:10px solid #626262;
+    padding-top:5px;
+    padding-left:25px;
     width:100%;
+    line-height: 5px;
 }
-
-.rowslider{
-    border-left:20px solid #626262;
-    border-top:10px solid #626262;
-}
-
 
 .marc{
+    font-size:1.5em;
     color:white;
 }
 
 .titlerowmarc{
     background-color: black;
-    height:50px;
     color:#f3ca06;
     border: 1px solid #626262;
-    min-height:90px;
-}
-
-.marc{
-    font-size:1.5em;
+    height:50px;
+    padding-top:10px;
+    line-height:10px;
 }
 
 .titlerowothermenus{
     background-color: black;
-    min-height:90px;
+    height:50px;
     color:#f3ca06;
+    border: 1px solid #626262;
+    padding-top:30px;
+    line-height:10px;
+}
+
+.titlerowothermenus:hover{
+    background-color: #f3ca06;
+    height:50px;
+    color:black;
     border: 1px solid #626262;
     padding-top:30px;
 }
 
-.titlerow{
-    width:100%;
-}
-
 .subtitle{
     background-color: #424242;
+    /*line-height:15px;*/
+    margin-top:5px;
+    height:30px;
+    color:#f3ca06;
+    padding-top:10px;
 }
 
+.facebook, .soundcloud{
+    width:50%;
+    height:100%;
+    padding-top:20px;
+}
+
+.facebook{
+    float:left;
+}
+
+.soundcloud{
+    float:right;
+}
+
+.facebook img, .soundcloud img{
+    width:30px;
+}
+
+.hovericon{
+    display:none;
+}
+
+.titlerowsocialnetwork:hover .hovericon{
+    display:block;
+}
+
+.titlerowsocialnetwork:hover .nothovericon{
+    display:none;
+}
+
+.titlerowsocialnetwork{
+    background-color: black;
+    height:50px;
+    color:#f3ca06;
+    border: 1px solid #626262;
+    line-height:10px;
+}
+
+.footer p{
+    display:none;
+}
+/*----------------------------------------------------------FONTS SETTINGS-----------------------------------------*/
 @font-face {
     font-family: 'almontewoodgrain';
-    src: url("fonts/almontewoodgrain.otf"); 
+    src: url("../fonts/almontewoodgrain.otf"); 
 }	
 
 @font-face {
     font-family: 'MICROGBE';
-    src: url("fonts/MICROGBE.ttf"); 
+    src: url("../fonts/MICROGBE.ttf"); 
 }
 
-.subtitle h2{
-    font-family:MICROGBE;
+@font-face{
+    font-family: "MICROGME";
+    src: url("../fonts/MICROGME.ttf");
+}
+
+.subtitle{
+    font-family:"almontewoodgrain";
     font-size:1.2em;
+    font-style: italic;
 }
 
-
-
-/*----------------------------------------------------------SLIDER PART-----------------------------------------*/
-.slider {
-    width: 100%;
-    margin: 0px auto;
+.titlerowmarc, .titlerowothermenus{
+    font-family:"MICROGBE";
 }
 
-.slick-slide {
-  margin: 5px 2px;
+.marcsubtitle{
+    font-size: 0.9em;
 }
 
-.image img {
-  width: 100%;
-}
-
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
-
-.slick-active {
-  opacity: 1;
-}
-
-.slick-current {
-  opacity: 1;
-}
-
-/*----------------------------------------------------------SLIDER PART-----------------------------------------*/
-/*----------------------------------------------------------HOVER SETTINGS-----------------------------------------*/
-/*----------------------------------------------------------ONLY FOR ALBUMS-----------------------------------------*/
-
-.imagealbums {
-    position:relative;
-    display:inline-block;
-}
-
-.imagealbums img {
-    width: 100%;
-  }
-
-.imagealbums:hover .overlay {
-    width:100%;
-    height:100%;
-    background:rgba(134, 134, 134, 0.75);
-    position:absolute;
-    top:0;
-    left:0;
-    display:inline-block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-
-
-
-/*----------------------------------------------------------SLIDER PART-----------------------------------------*/
-/*----------------------------------------------------------HOVER SETTINGS-----------------------------------------*/
-/*----------------------------------------------------------ONLY FOR FILMS-----------------------------------------*/
-
-.imagefilms {
-    position:relative;
-    display:inline-block;
-}
-
-.imagefilms img {
-    width: 100%;
-  }
-
-.imagefilms:hover .overlay {
-    width:100%;
-    height:100%;
-    background:rgba(134, 134, 134, 0.75);
-    position:absolute;
-    top:0;
-    left:0;
-    display:inline-block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-
-/*----------------------------------------------------------SLIDER PART-----------------------------------------*/
-/*----------------------------------------------------------HOVER SETTINGS-----------------------------------------*/
-/*----------------------------------------------------------ONLY FOR FILMS-----------------------------------------*/
-/*----------------------------------------------------------SPECIAL FOR LANDSCAPES-----------------------------------------*/
-
-.imagefilmsright {
-    position:relative;
-    display:inline-block;
-}
-
-.imagefilmsleft {
-    position:relative;
-    display:inline-block;
-}
-
-.imagefilmsright img {
-    width: 100%;
-}
-
-.imagefilmsleft img {
-    width: 100%;
-}
-
-.overlayspecialright, .overlayspecialleft {
-    display:none;
-}
-
-.specialoverlay:hover .imagefilmsright img{
-    display:none;
-}
-
-.specialoverlay:hover .overlayspecialleft {
-    width:100%;
-    height:100%;
-    background-color:rgba(134, 134, 134, 0.75);
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-}
-
-.specialoverlay:hover .imagefilmsleft .fond {
-    opacity: 0.01;
-}
-
-.hoverpersotextleft{
-	height:80%;
-}
-
-.hoverpersoprojectleft{
-    color:#ffffff;
-    padding: 5px 5px 0px 5px;
-}
-
-.hoverpersocustomerleft{
-    color:#000000;
-    padding: 0px 5px 0px 5px;
-}
-
-.hoverpersofunctionleft{
-    color:#f3ca06;
-    padding: 0px 5px 0px 5px;
-}
-
-.hoverpersooptionleft{
-    color:#ffffff;
-    padding: 0px 5px 0px 5px;
-}
-
-.linksleftvisible2{
-	width:33%;
-	float:left;
-	height:100%;
-}
-
-.linksmiddlevisible2{
-    width:33%;
-    float:left;
-    height:100%;
-}
-
-.linksrightvisible2{
-	width:33%;
-	float:right;
-    height:100%;
-}
-
-.linksrighthidden2, .linkslefthidden2, .linksmiddlehidden2{
-    display:none;
-}
-
-.linksleftvisible2 img{
-    width:25%;
-}
-
-.linksmiddlevisible2 img{
-    width:25%;
-}
-
-.linksrightvisible2 img{
-    width:25%;
-}
-
-/*----------------------------------------------------------SLIDER PART-----------------------------------------*/
-/*----------------------------------------------------------HOVER SETTINGS-----------------------------------------*/
-/*----------------------------------------------------------COMMON FOR ALBUMS AND FILMS-----------------------------------------*/
+/*----------------------------------------------------------SLIDER SPECIFICITIES -----------------------------------------*/
 .overlay {
-    display:none;
-}
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(134, 134, 134);  
+    padding-left:5px;
+    padding-right: 5px;
+    padding-top:5px;
+ }
+ 
+ .swiper-slide:hover .overlay {
+   display: block;
+   background-color: 868686;
+   opacity:0.85;
+   font-size:1.2em;
+ }
+ 
+ .hoverpersotext{
+     height:80%;
+     line-height: initial;
+ }
+ 
+ .hoverpersolinks{
+     color:yellow;
+     height:20%;
+ }
 
-.hoverpersotext{
-	height:80%;
+ .hoverpersolinks img{
+    height:75%;
 }
+ 
+ .hoverpersoproject,  .hoverpersofunction,  .hoverpersocustomer, .hoverpersooption{
+    font-size:0.7em;
+ }
 
-.hoverpersolinks{
-	color:yellow;
-    height:20%;
-}
+ .hoverpersoproject{
+     color:#ffffff;
+     font-family:"MICROGBE";
+ }
+ 
+ .hoverpersofunction{
+     color:#f3ca06;
+     font-family:"MICROGME";
+ }
 
-.hoverpersoproject{
-    color:#ffffff;
-    padding: 5px 5px 0px 5px;
-}
-
-.hoverpersocustomer{
+ .hoverpersocustomer{
     color:#000000;
-    padding: 0px 5px 0px 5px;
-}
-
-.hoverpersofunction{
-    color:#f3ca06;
-    padding: 0px 5px 0px 5px;
+    font-family:"MICROGBE";
 }
 
 .hoverpersooption{
     color:#ffffff;
-    padding: 0px 5px 0px 5px;
+    font-family:"MICROGME";
 }
-
-.linksleftvisible{
+ 
+ .linksleftvisible{
 	width:33%;
 	float:left;
 	height:100%;
@@ -328,160 +208,4 @@ body{
     display:none;
 }
 
-.linksleftvisible img{
-    width:50%;
-}
 
-.linksmiddlevisible img{
-    width:50%;
-}
-
-.linksrightvisible img{
-    width:50%;
-}
-
-
-/*----------------------------------------------------------SLIDER PART-----------------------------------------*/
-/*----------------------------------------------------------HOVER SETTINGS-----------------------------------------*/
-/*----------------------------------------------------------NEED TO CREATE FOR EACH SINGLE IMAGE-----------------------------------------*/
-
-.specialoverlay:hover .overlayspecialacadomia {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/acadomia2.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-.specialoverlay:hover .overlayspecialmarineland {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/marineland2.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-.specialoverlay:hover .overlayspecialacadomia {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/acadomia2.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-.specialoverlay:hover .overlayspecialnyc {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/long-live-new-york-zelt-prod.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-.specialoverlay:hover .overlayspecialmarineland {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/marineland2.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-
-.specialoverlay:hover .overlayspecialhublot {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/mr-hublot-oscar-2014-zelt.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-.specialoverlay:hover .overlayspecialbeauval {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/zoo-beauval.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-.specialoverlay:hover .overlayspecialzoobordeaux {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/zoo-bordeaux-pessac.jpg);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-
-
-
-/* CREER CSS SPECIAL POUR LES HORIZONTAUX : */
-/*
-.specialoverlay:hover .overlayspecialnomduprojet {
-    width:200%;
-    height:100%;
-    background-image: url(../pics/Films/nomdelimagecomplete.extension);
-    background-size: cover;
-    position:absolute;
-    top:0;
-    left:0;
-    display:block;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    border:1px solid white;
-}
-*/

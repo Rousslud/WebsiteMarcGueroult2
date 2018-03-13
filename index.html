@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset='utf-8'>
-	<link rel="stylesheet" href="./css/bootstrap.css" />
-	<link rel="stylesheet" href="./css/style.css" />
-	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/swiper.css">
 	<script type="application/javascript" src="./jquery/jquery-3.3.1.js"></script>
 	<script type="application/javascript" src="./js/bootstrap.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="application/javascript" src="./js/swiper.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title> MARC GUEROULT - Ingénieur du son - Réalisateur</title>
 	<meta name="author" content="Marc Gueroult">
 	<meta name="contactname" content="Marc Gueroult">
@@ -19,7 +19,48 @@
 	<meta name="date-creation-ddmmyyyy" content="01032018">
 	<meta name="date-revision-ddmmyyyy" content="11032018">
 	<script src="./jquery/jquery-3.3.1.js" type="text/javascript"></script>
-	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<style>
+		.swiper-container s1 {
+			width: 100%;
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+
+		.swiper-slide {
+			background-position: center;
+			background-size: cover;
+			height: 120px;
+			/*width: 100px;*/
+		}
+
+		.album {
+			background-position: center;
+			background-size: cover;
+			/*height: 200px;
+			width: 200px;*/
+			height: 150px;
+			width: 150px;
+		}
+
+		.horizontalaffiche {
+			background-position: center;
+			background-size: cover;
+			/*width: 310px;
+			height:200px;*/
+			width: 244px;
+			height:150px;
+		}
+
+		.verticalaffiche {
+			background-position: center;
+			background-size: cover;
+			/*width: 150px;
+			height:200px;*/
+			width: 117px;
+			height:150px;
+		}
+		
+	</style>
 </head>
 
 <body>
@@ -31,7 +72,7 @@
 						<p class="marc">
 							<b>MARC GUEROULT</b>
 						</p>
-						<p>Ingénieur du son - Mixeur - Réalisateur</p>
+						<p class="marcsubtitle">Ingénieur du son - Mixeur - Réalisateur</p>
 					</div>
 					<div class="col-sm-2 titlerowothermenus">
 						<p>
@@ -48,32 +89,74 @@
 							<b>Contact</b>
 						</p>
 					</div>
-					<div class="col-sm-2 titlerowothermenus">
-						<p>
-							<b>Facebook</b>
-						</p>
+					<div class="col-sm-2 titlerowsocialnetwork">
+						<div class="facebook">
+							<img class="nothovericon" src="./pics/icons/logo-facebook-jaune.png" />
+							<img class="hovericon" src="./pics/icons/logo-facebook.png" />
+						</div>
+						<div class="soundcloud">
+							<img class="nothovericon" src="./pics/icons/soundsloud-logo-jaune.png" />
+							<img class="hovericon" src="./pics/icons/soundsloud-logo-original.png" />
+						</div>
 					</div>
 				</div>
 				<div class="row titlerow">
 					<div class="col-sm-12 subtitle">
-						<h2>Musique à l'image - Spectacles </h2>
+						<p>Musique à l'image - Spectacles </p>
 					</div>
 				</div>
 				<div class="row titlerow">
 					<div class="col-sm-12 rowslider">
-						<section class="regular slider">
-							<div class="imagefilmsleft">
-								<img class="fond" src="./pics/Films/acadomialeft.jpg" />
-								<div class="overlayspecialacadomia">
-									<div class="overlayspecialleft">
-										<div class="hoverpersotextleft">
-											<div class="hoverpersoprojectleft">
-												Julien Fourquez
+						<!-- Swiper -->
+						<div class="swiper-container s1">
+							<div class="swiper-wrapper">
+								<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ SLIDER FILMS SPECTACLES 1 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\v-->
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/myma-orchestral-fairyland.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
 											</div>
-											<div class="hoverpersofunctionleft">
+											<div class="hoverpersofunction">
 												Mixage
 											</div>
-											<div class="hoverpersocustomerleft">
+											<div class="hoverpersocustomer">
+												MYMA
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/user1684311/ladder-to-the-stars-orchestral-fairyland?in=user1684311/sets/musiques-destinees-a"
+												 target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://myma.emipm.com/fr/browse/labels/JUST/111" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://francoisrousselot.fr/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide horizontalaffiche" style="background-image:url(./pics/Films/acadomia.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Julien Fourquez
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
 												Acadomia
 											</div>
 											<div class="hoverpersooption">
@@ -81,17 +164,17 @@
 											</div>
 										</div>
 										<div class="hoverpersolinks">
-											<div class="linksleftvisible2">
+											<div class="linksleftvisible">
 												<a href="https://vimeo.com/167239412" target="_blank">
 													<img align="right" src="./pics/icons/iconeplay.png">
 												</a>
 											</div>
-											<div class="linksrightvisible2">
+											<div class="linksrightvisible">
 												<a href="https://vimeo.com/167239412" target="_blank">
 													<img src="./pics/icons/iconesavoirplus.png">
 												</a>
 											</div>
-											<div class="linksmiddlevisible2">
+											<div class="linksmiddlevisible">
 												<a href="http://www.luxtone.fr/" target="_blank">
 													<img align="right" src="./pics/icons/iconecompositeur.png">
 												</a>
@@ -99,327 +182,34 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilmsright">
-								<img src="./pics/Films/acadomiaright.jpg" />
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/bis-farrugia.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Julien Jaouen - David Imbault
-										</div>
-										<div class="hoverpersofunction">
-											Rec orchestre
-										</div>
-										<div class="hoverpersocustomer">
-											Europa Corp
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/julienjaouen/eric-et-patrick-main-theme?in=julienjaouen/sets/julien-jaouen-medley" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=224790.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.julienjaouen.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/buddha-bar.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Alexis Maingaud
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Boudha Bar
-										</div>
-										<div class="hoverpersooption">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/alexis-maingaud/buddha-bar-twenty-year-anniversary#t=0:00" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.youtube.com/watch?v=R3rEjuoDzMc" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://alexismaingaud.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/de-l-autre-cote-du-lit.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Eric Neveux
-										</div>
-										<div class="hoverpersofunction">
-											Record
-										</div>
-										<div class="hoverpersocustomer">
-
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/275365" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=134189.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.ericneveux.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/erreur-de-la-banque-en-vore-faveur.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Chrisptophe Lapinta
-										</div>
-										<div class="hoverpersofunction">
-											Mixage et Record
-										</div>
-										<div class="hoverpersocustomer">
-
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/marc-gueroult/christophe-lapinta-erreur-de" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=133826.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.troisieme-auteur.com/christophe-la-pinta/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/humaine.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											JP &amp; Q ALIX
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/user1684311/humaine-bande-son?in=user1684311/sets/musiques-de-film-soundtracks-1" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.kisskissbankbank.com/humaine" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/interventions-tf1.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Romain Paillot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											TF1
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/romain-paillot/interventions-ost-tv-show" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/series/ficheserie_gen_cserie=16944.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.agencegaspard.com/artiste_bio.php?aid=10" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/la-maison-tellier.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Cyril Aufort
-										</div>
-										<div class="hoverpersofunction">
-											Record
-										</div>
-										<div class="hoverpersocustomer">
-											France 2
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/track/61645588" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=188757.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.marie-sabbah-agency.com/compositeur-aufort.html" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/la-mort-ne-raconte-pas-histoire.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Christopher Schepard
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/user1684311/sets/la-mort-ne-raconte-pas-1" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=239068.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilmsleft">
-								<img class="fond" src="./pics/Films/long-live-new-york-zelt-prodleft.jpg" />
-								<div class="overlayspecialnyc">
-									<div class="overlayspecialleft">
-										<div class="hoverpersotextleft">
-											<div class="hoverpersoprojectleft">
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/myma-orchestral-rebirth.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
 												Francois Rousselot
 											</div>
-											<div class="hoverpersofunctionleft">
-												Mixage
+											<div class="hoverpersofunction">
+												Mixage et Record
 											</div>
-											<div class="hoverpersocustomerleft">
-												Zeilt Production
+											<div class="hoverpersocustomer">
+												MYMA
 											</div>
 											<div class="hoverpersooption">
 
 											</div>
 										</div>
 										<div class="hoverpersolinks">
-											<div class="linksleftvisible2">
-												<a href="https://vimeo.com/135677296" target="_blank">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/user1684311/childhood-symphony?in=user1684311/sets/musiques-destinees-a" target="_blank">
 													<img align="right" src="./pics/icons/iconeplay.png">
 												</a>
 											</div>
-											<div class="linksrightvisible2">
-												<a href="https://vimeo.com/135677296" target="_blank">
+											<div class="linksrightvisible">
+												<a href="https://myma.emipm.com/fr/browse/labels/JUST/89" target="_blank">
 													<img src="./pics/icons/iconesavoirplus.png">
 												</a>
 											</div>
-											<div class="linksmiddlevisible2">
+											<div class="linksmiddlevisible">
 												<a href="http://www.francoisrousselot.fr" target="_blank">
 													<img align="right" src="./pics/icons/iconecompositeur.png">
 												</a>
@@ -427,22 +217,261 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilmsright">
-								<img src="./pics/Films/long-live-new-york-zelt-prodright.jpg" />
-							</div>
-							<div class="imagefilmsleft">
-								<img class="fond" src="./pics/Films/marinelandleft.jpg" />
-								<div class="overlayspecialmarineland">
-									<div class="overlayspecialleft">
-										<div class="hoverpersotextleft">
-											<div class="hoverpersoprojectleft">
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/paul-et-ses-femmes.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Pierre Adenot
+											</div>
+											<div class="hoverpersofunction">
+												Record Assist
+											</div>
+											<div class="hoverpersocustomer">
+
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=183095.html" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=183095.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.marie-sabbah-agency.com/compositeur-adenot.html" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/psi.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Alexis Maingaud
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Olivie Wright
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://itunes.apple.com/us/album/psi-original-motion-picture-soundtrack/1325344382" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.psi-the-project.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://alexismaingaud.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/val-grangent-2012-chocolaterie.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
 												Francois Rousselot
 											</div>
-											<div class="hoverpersofunctionleft">
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Spectacle Val Grangent
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linkslefthidden">
+												<a href="https://soundcloud.com/user1684311/irish-adventure?in=user1684311/sets/musiques-diverses-et-vari-es-1" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.valgrangent.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/val-grangent-2015-secret-arcadia.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Spectacle Val Grangent
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linkslefthidden">
+												<a href="lien internet" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.valgrangent.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide horizontalaffiche" style="background-image:url(./pics/Films/long-live-new-york-zelt-prod.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Zeilt Production
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://vimeo.com/135677296" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://vimeo.com/135677296" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/val-grangent-2017-azencko.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
 												Mixage - Rec add
 											</div>
-											<div class="hoverpersocustomerleft">
+											<div class="hoverpersocustomer">
+												Spectacle Val Grangent
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linkslefthidden">
+												<a href="lien internet" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.valgrangent.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/tide.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/user1684311/main-title-video-game?in=user1684311/sets/musiques-de-film-soundtracks-1" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://fr-fr.facebook.com/pg/tide.game/about/?ref=page_internal" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide horizontalaffiche" style="background-image:url(./pics/Films/marineland.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Rec add
+											</div>
+											<div class="hoverpersocustomer">
 												Marineland
 											</div>
 											<div class="hoverpersooption">
@@ -450,17 +479,17 @@
 											</div>
 										</div>
 										<div class="hoverpersolinks">
-											<div class="linksleftvisible2">
+											<div class="linksleftvisible">
 												<a href="https://soundcloud.com/user1684311/the-hunters?in=user1684311/sets/musiques-diverses-et-vari-es-1" target="_blank">
 													<img align="right" src="./pics/icons/iconeplay.png">
 												</a>
 											</div>
-											<div class="linksrightvisible2">
+											<div class="linksrightvisible">
 												<a href="https://www.marineland.fr/content/home/" target="_blank">
 													<img src="./pics/icons/iconesavoirplus.png">
 												</a>
 											</div>
-											<div class="linksmiddlevisible2">
+											<div class="linksmiddlevisible">
 												<a href="http://www.francoisrousselot.fr" target="_blank">
 													<img align="right" src="./pics/icons/iconecompositeur.png">
 												</a>
@@ -468,167 +497,274 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilmsright">
-								<img src="./pics/Films/marinelandright.jpg" />
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/lili-la-petite-sorciere.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Klaus Badelt
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Disney
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="http://klausbadelt.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=145738.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://klausbadelt.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/l-internat-m6.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Sauvagniac et Zidi
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											M6
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="http://www.agencesartistiques.com/Fiche-Video/266525-0-stephane-zidi-et-laurent-sauvagnac.html#son" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/series/ficheserie_gen_cserie=6471.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.agence-vo.com/fiche.cfm/266525/stephane_zidi_et_laurent_sauvagnac.html" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/myma-orchestral-adventure.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											MYMA
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/user1684311/clouds-surfing-orchestral-adventure?in=user1684311/sets/musiques-destinees-a"
-											 target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://myma.emipm.com/fr/browse/labels/JUST/112" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/myma-orchestral-epic-adventure.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											MYMA
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/user1684311/irish-adventure?in=user1684311/sets/musiques-diverses-et-vari-es-1" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://myma.emipm.com/fr/browse/labels/JUST/127" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilmsleft">
-								<img class="fond" src="./pics/Films/mr-hublot-oscar-2014-zeltleft.jpg" />
-								<div class="overlayspecialhublot">
-									<div class="overlayspecialleft">
-										<div class="hoverpersotextleft">
-											<div class="hoverpersoprojectleft">
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/val-grangent-2016-cristal-opalie.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
 												Francois Rousselot
 											</div>
-											<div class="hoverpersofunctionleft">
+											<div class="hoverpersofunction">
+												Mixage - Rec add
+											</div>
+											<div class="hoverpersocustomer">
+												Spectacle Val Grangent
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linkslefthidden">
+												<a href="lien internet" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.valgrangent.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>					
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/transfert-arte.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												David Imbault
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Rec add
+											</div>
+											<div class="hoverpersocustomer">
+												Arte
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/davidimbault/sets/transferts-dark-side" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/series/ficheserie_gen_cserie=21013.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="https://www.davidimbault.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/lili-la-petite-sorciere.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Klaus Badelt
+											</div>
+											<div class="hoverpersofunction">
 												Mixage
 											</div>
-											<div class="hoverpersocustomerleft">
+											<div class="hoverpersocustomer">
+												Disney
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="http://klausbadelt.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=145738.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://klausbadelt.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row titlerow">
+					<div class="col-sm-12 rowslider">
+						<!-- /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ SLIDER FILMS SPECTACLES 2 /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\v-->
+						<div class="swiper-container s2">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/l-internat-m6.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Sauvagniac et Zidi
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												M6
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="http://www.agencesartistiques.com/Fiche-Video/266525-0-stephane-zidi-et-laurent-sauvagnac.html#son" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/series/ficheserie_gen_cserie=6471.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.agence-vo.com/fiche.cfm/266525/stephane_zidi_et_laurent_sauvagnac.html" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/myma-orchestral-adventure.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												MYMA
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/user1684311/clouds-surfing-orchestral-adventure?in=user1684311/sets/musiques-destinees-a"
+												 target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://myma.emipm.com/fr/browse/labels/JUST/112" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/myma-orchestral-epic-adventure.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												MYMA
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/user1684311/irish-adventure?in=user1684311/sets/musiques-diverses-et-vari-es-1" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://myma.emipm.com/fr/browse/labels/JUST/127" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/bis-farrugia.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Julien Jaouen - David Imbault
+											</div>
+											<div class="hoverpersofunction">
+												Rec orchestre
+											</div>
+											<div class="hoverpersocustomer">
+												Europa Corp
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/julienjaouen/eric-et-patrick-main-theme?in=julienjaouen/sets/julien-jaouen-medley" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=224790.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.julienjaouen.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide horizontalaffiche" style="background-image:url(./pics/Films/mr-hublot-oscar-2014-zelt.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
 												Zeilt Production
 											</div>
 											<div class="hoverpersooption">
@@ -636,17 +772,17 @@
 											</div>
 										</div>
 										<div class="hoverpersolinks">
-											<div class="linksleftvisible2">
+											<div class="linksleftvisible">
 												<a href="https://soundcloud.com/user1684311/mr-hublot-extraits" target="_blank">
 													<img align="right" src="./pics/icons/iconeplay.png">
 												</a>
 											</div>
-											<div class="linksrightvisible2">
+											<div class="linksrightvisible">
 												<a href="http://www.imdb.com/title/tt3043542/" target="_blank">
 													<img src="./pics/icons/iconesavoirplus.png">
 												</a>
 											</div>
-											<div class="linksmiddlevisible2">
+											<div class="linksmiddlevisible">
 												<a href="http://www.francoisrousselot.fr" target="_blank">
 													<img align="right" src="./pics/icons/iconecompositeur.png">
 												</a>
@@ -654,383 +790,120 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilmsright">
-								<img src="./pics/Films/mr-hublot-oscar-2014-zeltright.jpg" />
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/myma-orchestral-fairyland.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/buddha-bar.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Alexis Maingaud
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Boudha Bar
+											</div>
+											<div class="hoverpersooption">
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											MYMA
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/user1684311/ladder-to-the-stars-orchestral-fairyland?in=user1684311/sets/musiques-destinees-a"
-											 target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://myma.emipm.com/fr/browse/labels/JUST/111" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://francoisrousselot.fr/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/alexis-maingaud/buddha-bar-twenty-year-anniversary#t=0:00" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.youtube.com/watch?v=R3rEjuoDzMc" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://alexismaingaud.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/myma-orchestral-rebirth.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage et Record
-										</div>
-										<div class="hoverpersocustomer">
-											MYMA
-										</div>
-										<div class="hoverpersooption">
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/de-l-autre-cote-du-lit.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Eric Neveux
+											</div>
+											<div class="hoverpersofunction">
+												Record
+											</div>
+											<div class="hoverpersocustomer">
 
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
 										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/user1684311/childhood-symphony?in=user1684311/sets/musiques-destinees-a" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://myma.emipm.com/fr/browse/labels/JUST/89" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/275365" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=134189.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.ericneveux.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/paul-et-ses-femmes.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Pierre Adenot
-										</div>
-										<div class="hoverpersofunction">
-											Record Assist
-										</div>
-										<div class="hoverpersocustomer">
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/erreur-de-la-banque-en-vore-faveur.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Chrisptophe Lapinta
+											</div>
+											<div class="hoverpersofunction">
+												Mixage et Record
+											</div>
+											<div class="hoverpersocustomer">
 
-										</div>
-										<div class="hoverpersooption">
+											</div>
+											<div class="hoverpersooption">
 
+											</div>
 										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=183095.html" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=183095.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.marie-sabbah-agency.com/compositeur-adenot.html" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/marc-gueroult/christophe-lapinta-erreur-de" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=133826.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.troisieme-auteur.com/christophe-la-pinta/" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/psi.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Alexis Maingaud
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Olivie Wright
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://itunes.apple.com/us/album/psi-original-motion-picture-soundtrack/1325344382" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.psi-the-project.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://alexismaingaud.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/val-grangent-2012-chocolaterie.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Spectacle Val Grangent
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linkslefthidden">
-											<a href="https://soundcloud.com/user1684311/irish-adventure?in=user1684311/sets/musiques-diverses-et-vari-es-1" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.valgrangent.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/val-grangent-2015-secret-arcadia.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Spectacle Val Grangent
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linkslefthidden">
-											<a href="lien internet" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.valgrangent.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/val-grangent-2016-cristal-opalie.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage - Rec add
-										</div>
-										<div class="hoverpersocustomer">
-											Spectacle Val Grangent
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linkslefthidden">
-											<a href="lien internet" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.valgrangent.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/val-grangent-2017-azencko.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage - Rec add
-										</div>
-										<div class="hoverpersocustomer">
-											Spectacle Val Grangent
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linkslefthidden">
-											<a href="lien internet" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.valgrangent.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/tide.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Francois Rousselot
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/user1684311/main-title-video-game?in=user1684311/sets/musiques-de-film-soundtracks-1" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://fr-fr.facebook.com/pg/tide.game/about/?ref=page_internal" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="http://www.francoisrousselot.fr" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilms">
-								<img src="./pics/Films/transfert-arte.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											David Imbault
-										</div>
-										<div class="hoverpersofunction">
-											Mixage - Rec add
-										</div>
-										<div class="hoverpersocustomer">
-											Arte
-										</div>
-										<div class="hoverpersooption">
-
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/davidimbault/sets/transferts-dark-side" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/series/ficheserie_gen_cserie=21013.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										<div class="linksmiddlevisible">
-											<a href="https://www.davidimbault.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilmsleft">
-								<img class="fond" src="./pics/Films/zoo-beauvalleft.jpg" />
-								<div class="overlayspecialbeauval">
-									<div class="overlayspecialleft">
-										<div class="hoverpersotextleft">
-											<div class="hoverpersoprojectleft">
+								<div class="swiper-slide horizontalaffiche" style="background-image:url(./pics/Films/zoo-beauval.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
 												Francois Rousselot
 											</div>
-											<div class="hoverpersofunctionleft">
+											<div class="hoverpersofunction">
 												Mixage - Rec add
 											</div>
-											<div class="hoverpersocustomerleft">
+											<div class="hoverpersocustomer">
 												Zoo de Beauval
 											</div>
 											<div class="hoverpersooption">
@@ -1038,18 +911,18 @@
 											</div>
 										</div>
 										<div class="hoverpersolinks">
-											<div class="linksleftvisible2">
+											<div class="linksleftvisible">
 												<a href="https://soundcloud.com/user1684311/zooparc-de-beauval-les-as-du-ciel-les-faucons?in=user1684311/sets/musiques-diverses-et-vari-es-1"
 												 target="_blank">
 													<img align="right" src="./pics/icons/iconeplay.png">
 												</a>
 											</div>
-											<div class="linksrightvisible2">
+											<div class="linksrightvisible">
 												<a href="https://www.zoobeauval.com/spectacles-et-activites/" target="_blank">
 													<img src="./pics/icons/iconesavoirplus.png">
 												</a>
 											</div>
-											<div class="linksmiddlevisible2">
+											<div class="linksmiddlevisible">
 												<a href="http://www.francoisrousselot.fr" target="_blank">
 													<img align="right" src="./pics/icons/iconecompositeur.png">
 												</a>
@@ -1057,22 +930,156 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagefilmsright">
-								<img src="./pics/Films/zoo-beauvalright.jpg" />
-							</div>
-							<div class="imagefilmsleft">
-								<img class="fond" src="./pics/Films/zoo-bordeaux-pessacleft.jpg" />
-								<div class="overlayspecialzoobordeaux">
-									<div class="overlayspecialleft">
-										<div class="hoverpersotextleft">
-											<div class="hoverpersoprojectleft">
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/humaine.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
 												Francois Rousselot
 											</div>
-											<div class="hoverpersofunctionleft">
+											<div class="hoverpersofunction">
 												Mixage
 											</div>
-											<div class="hoverpersocustomerleft">
+											<div class="hoverpersocustomer">
+												JP &amp; Q ALIX
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/user1684311/humaine-bande-son?in=user1684311/sets/musiques-de-film-soundtracks-1" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.kisskissbankbank.com/humaine" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/interventions-tf1.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Romain Paillot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												TF1
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/romain-paillot/interventions-ost-tv-show" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/series/ficheserie_gen_cserie=16944.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.agencegaspard.com/artiste_bio.php?aid=10" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/la-maison-tellier.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Cyril Aufort
+											</div>
+											<div class="hoverpersofunction">
+												Record
+											</div>
+											<div class="hoverpersocustomer">
+												France 2
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/track/61645588" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=188757.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.marie-sabbah-agency.com/compositeur-aufort.html" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide verticalaffiche" style="background-image:url(./pics/Films/la-mort-ne-raconte-pas-histoire.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Christopher Schepard
+											</div>
+											<div class="hoverpersooption">
+
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/user1684311/sets/la-mort-ne-raconte-pas-1" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=239068.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+											<div class="linksmiddlevisible">
+												<a href="http://www.francoisrousselot.fr" target="_blank">
+													<img align="right" src="./pics/icons/iconecompositeur.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>						
+								<div class="swiper-slide horizontalaffiche" style="background-image:url(./pics/Films/zoo-bordeaux.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Francois Rousselot
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
 												Zoo de Bordeaux/Pessac
 											</div>
 											<div class="hoverpersooption">
@@ -1080,17 +1087,17 @@
 											</div>
 										</div>
 										<div class="hoverpersolinks">
-											<div class="linksleftvisible2">
+											<div class="linksleftvisible">
 												<a href="http://francoisrousselot.fr/musiquefilm.html" target="_blank">
 													<img align="right" src="./pics/icons/iconeplay.png">
 												</a>
 											</div>
-											<div class="linksrightvisible2">
+											<div class="linksrightvisible">
 												<a href="http://www.zoo-bordeaux-pessac.com/le-parc/spectacles-et-animations/" target="_blank">
 													<img src="./pics/icons/iconesavoirplus.png">
 												</a>
 											</div>
-											<div class="linksmiddlevisible2">
+											<div class="linksmiddlevisible">
 												<a href="http://www.francoisrousselot.fr" target="_blank">
 													<img align="right" src="./pics/icons/iconecompositeur.png">
 												</a>
@@ -1099,1285 +1106,1240 @@
 									</div>
 								</div>
 							</div>
-							<div class="imagefilmsright">
-								<img src="./pics/Films/zoo-bordeaux-pessacright.jpg" />
-							</div>
-
-
-							<!-- Rajouter une image verticale : COPIER LE CODE SUIVANT -->
-
-							<!-- IL EST IMPORTANT DE RESPECTER UN NOMBRE PAIR D'AFFICHES VERTICALES ENTRE 2 AFFICHES HORIZONTALES -->
-							<!--<div class="imagefilms">
-								<img src="./pics/Films/nomfichier.extension" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Le projet
-										</div>
-										<div class="hoverpersofunction">
-											Ce que vous y avez fait
-										</div>
-										<div class="hoverpersocustomer">
-											Le client
-										</div>
-										<div class="hoverpersooption">
-											Eventuellement une option / commentaire supplementaire 
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										VISIBLE ou HIDDEN
-										<div class="linksleftvisible">
-											<a href="lien internet" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>		
-										VISIBLE ou HIDDEN								
-										<div class="linksrightvisible">
-											<a href="lien internet" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-										VISIBLE ou HIDDEN
-										<div class="linksmiddlevisible">
-											<a href="lien internet" target="_blank">
-												<img align="right" src="./pics/icons/iconecompositeur.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>-->
-							<!-- FIN DU CODE POUR IMAGE VERTICALE -->
-							<!-- Rajouter une image horizontale : COPIER LE CODE SUIVANT -->
-							<!-- IL EST IMPORTANT DE RESPECTER UN NOMBRE PAIR D'AFFICHES VERTICALES ENTRE 2 AFFICHES HORIZONTALES -->
-							<!-- ON A BESOIN DE 3 IMAGES POUR UNE AFFICHE HORIZONTALE : CF FICHIER README DANS PICS/FILMS/ -->
-							<!--
-								<div class="imagefilmsleft">
-								<img class="fond" src="./pics/Films/demieimagepartiegauche.extension" />
-								FAUT CREER DANS LE CSS UN BLOC EXPRESS: CF FICHIER STYLE.CSS DANS LE DOSSIER CSS TOUT EN BAS DU FICHIER 
-								<div class="overlayspecialnomduprojet">
-									<div class="overlayspecialleft">
-										<div class="hoverpersotextleft">
-											<div class="hoverpersoprojectleft">
-												Le projet
-											</div>
-											<div class="hoverpersofunctionleft">
-												Ce que vous y avez fait
-											</div>
-											<div class="hoverpersocustomerleft">
-												Le client
-											</div>
-											<div class="hoverpersooption">
-												Eventuellement une option / commentaire supplementaire 
-											</div>
-										</div>
-										<div class="hoverpersolinks">	
-											VISIBLE ou HIDDEN									
-											<div class="linksleftvisible2">
-												<a href="lien internet" target="_blank">
-													<img align="right" src="./pics/icons/iconeplay.png">
-												</a>
-											</div>		
-											VISIBLE ou HIDDEN								
-											<div class="linksrightvisible2">
-												<a href="lien internet" target="_blank">
-													<img src="./pics/icons/iconesavoirplus.png">
-												</a>
-											</div>
-											VISIBLE ou HIDDEN
-											<div class="linksmiddlevisible2">
-												<a href="lien internet" target="_blank">
-													<img align="right" src="./pics/icons/iconecompositeur.png">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagefilmsright">
-								<img src="./pics/Films/demieimagepartiedroite.extension" />
-							</div>
-						-->
-							<!-- FIN DU CODE POUR IMAGE HORIZONTALE -->
-						</section>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
 					</div>
 				</div>
 				<div class="row titlerow">
 					<div class="col-sm-12 subtitle">
-						<h2>Albums </h2>
+						<p>Albums </p>
 					</div>
 				</div>
 				<div class="row titlerow">
 					<div class="col-sm-12 rowslider">
-						<section class="center slider">
-							<div class="imagealbums">
-								<img src="./pics/Albums/Christophe_Willem-Inventaire.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Christophe Willem
+						<div class="swiper-container s3">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/Christophe_Willem-Inventaire.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Christophe Willem
+											</div>
+											<div class="hoverpersofunction">
+												Prise de voix
+											</div>
+											<div class="hoverpersocustomer">
+												Sony BMG
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Prise de voix
-										</div>
-										<div class="hoverpersocustomer">
-											Sony BMG
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/72466" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.christophewillem.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/adrien-mallamaire.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Adrien Mallamaire
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linkslefthidden">
-											<a href="lien internet" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://adrienmallamaire.blogspot.fr/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/72466" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.christophewillem.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/Diams-Dans-ma-bulle.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Diams
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/adrien-mallamaire.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Adrien Mallamaire
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mix assist
-										</div>
-										<div class="hoverpersocustomer">
-											EMI
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/1343130" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://fr-fr.facebook.com/diams/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linkslefthidden">
+												<a href="lien internet" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://adrienmallamaire.blogspot.fr/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/didier-boutteville-kaemer-si-les-vents-tournaient.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Didier Boutteville-Kramer
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/zuzan-simurdova-fiser.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Zuzana Simurdova
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Aka Music
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.youtube.com/watch?v=W1jN7-ICaCc" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://fr-fr.facebook.com/dbkofficiel/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.zuzanapianist.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.zuzanapianist.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/esteren-adeliane.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Esteren - Adeliane
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/Diams-Dans-ma-bulle.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Diams
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mix assist
+											</div>
+											<div class="hoverpersocustomer">
+												EMI
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Agathe Edition
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/esteren/adeliane-down-the-river" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://portal.esteren.org/fr/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/esteren-dearg.png" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Esteren - Dearg
-										</div>
-										<div class="hoverpersofunction">
-											Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Agathe Edition
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://esteren.bandcamp.com/album/dearg" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://portal.esteren.org/fr/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/1343130" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://fr-fr.facebook.com/diams/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/esteren-rise.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Esteren - Rise
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/didier-boutteville-kaemer-si-les-vents-tournaient.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Didier Boutteville-Kramer
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Aka Music
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Agathe Edition
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/esteren/sets/esteren-rise" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://portal.esteren.org/fr/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/giovanni-mirabassi-out-of-track.jpeg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Giovanni Mirabassi
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Discograph
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/48776962" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.giovannimirabassi.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.youtube.com/watch?v=W1jN7-ICaCc" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://fr-fr.facebook.com/dbkofficiel/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/giovanni-mirabassi-terra-furiosa.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Giovanni Mirabassi
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/esteren-adeliane.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Esteren - Adeliane
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Agathe Edition
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage
-										</div>
-										<div class="hoverpersocustomer">
-											Discograph
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/48776932" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.giovannimirabassi.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/hyper-spectives-edouardo-bruni.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Hyperspective
-										</div>
-										<div class="hoverpersofunction">
-											Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Anima record
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="http://entremuses.com/boutique/catalogue/43-hyperspectives-edoardo-bruni-3760130510387.html" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://entremuses.com/boutique/catalogue/43-hyperspectives-edoardo-bruni-3760130510387.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/esteren/adeliane-down-the-river" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://portal.esteren.org/fr/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/immortels-cover.png" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Adrien Hermann
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/esteren-dearg.png)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Esteren - Dearg
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Agathe Edition
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Mixage - Rec add
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://soundcloud.com/adrienhermann/unangeatonchevetextrait" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://adrienhermann.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/jeam-michel-proust-aint-necessarily.jpeg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Jean-michel Proust
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/playlist/22202213" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.flyinghome.fr/proust.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://esteren.bandcamp.com/album/dearg" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://portal.esteren.org/fr/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/jimi-D-robin-mood.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Jimi Drouillard
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/esteren-rise.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Esteren - Rise
+											</div>
+											<div class="hoverpersofunction">
+												Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Agathe Edition
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Prise de son
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/esteren/sets/esteren-rise" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://portal.esteren.org/fr/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
-										<div class="hoverpersocustomer">
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/giovanni-mirabassi-out-of-track.jpeg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Giovanni Mirabassi
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Discograph
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/48776962" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.giovannimirabassi.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/giovanni-mirabassi-terra-furiosa.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Giovanni Mirabassi
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage
+											</div>
+											<div class="hoverpersocustomer">
+												Discograph
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/48776932" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.giovannimirabassi.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/hyper-spectives-edouardo-bruni.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Hyperspective
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Anima record
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="http://entremuses.com/boutique/catalogue/43-hyperspectives-edoardo-bruni-3760130510387.html" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://entremuses.com/boutique/catalogue/43-hyperspectives-edoardo-bruni-3760130510387.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/immortels-cover.png)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Adrien Hermann
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Rec add
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://soundcloud.com/adrienhermann/unangeatonchevetextrait" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://adrienhermann.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/jeam-michel-proust-aint-necessarily.jpeg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Jean-michel Proust
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/playlist/22202213" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.flyinghome.fr/proust.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/jimi-D-robin-mood.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Jimi Drouillard
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son
+											</div>
+											<div class="hoverpersocustomer">
 
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/1178290" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://jimidrouillard.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/1178290" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/johnny-hallyday-route-66.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Johnny Hallyday
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son
+											</div>
+											<div class="hoverpersocustomer">
+												Universal
+											</div>
 										</div>
-										<div class="linksrightvisible">
-											<a href="http://jimidrouillard.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/playlist/37504911" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.deezer.com/fr/playlist/37504911" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/la-maison-tellier-cyril-aufort.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Cyril Aufort
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son
+											</div>
+											<div class="hoverpersocustomer">
+												France 2
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/6041334" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=188757.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/liam-chagal.png)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Liam Chagal
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/15486142" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://liamchagal.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/manson-sempere.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Jeane Manson - Mathieu Sempere
+											</div>
+											<div class="hoverpersofunction">
+												Prise de voix
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/track/129257454" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.jeanemanson.com/fr/actualite/nouvelalbumamour/amour.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/matis_ombres_et_visages.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Mathis
+											</div>
+											<div class="hoverpersofunction">
+												Mixage
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://itunes.apple.com/fr/album/ombres-et-visages/id1081862082?app=itunes" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.mathisweb.fr/index.php" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/mihi-kim-giraud-le-cavalier-bleu.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Mihi Kim - Bertrand Giraud
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Anima record
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/10279480" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://mihikim.com/cd1/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/johnny-hallyday-route-66.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Johnny Hallyday
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row titlerow">
+					<div class="col-sm-12 footer">
+						<div class="swiper-container s3">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/mikolaj-warszynski.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Mikolaj Warszynski
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Anima record
+											</div>
 										</div>
-										<div class="hoverpersofunction">
-											Prise de son
-										</div>
-										<div class="hoverpersocustomer">
-											Universal
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.mikolajwarszynski.net/music-page" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.mikolajwarszynski.net/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/playlist/37504911" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/mushin-nuits-rouges.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Mushin
+											</div>
+											<div class="hoverpersofunction">
+												Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
 										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.deezer.com/fr/playlist/37504911" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="http://mushincontact.wixsite.com/mushinofficiel/musique" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://mushincontact.wixsite.com/mushinofficiel" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/nnae-la-transparente.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Nnae - La transparente
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.youtube.com/watch?time_continue=2&v=KQII2mYMCIE" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://annelajugie.wixsite.com/anne-lajugie" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/reiko-hozu-scriabism.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Reiko Hozu
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Anima record
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/10540406" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.reikohozu.com/fr/Home.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/reiko-hozu-souvenirs.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Reiko Hozu - Souvenirs
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Anima record
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/11481230" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.reikohozu.com/fr/Home.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/reiko-hozu-voyage-musical-bendix-balgley.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Reiko Hozu - Noah Bendix-Balgley
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Anima record
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/11232542" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://noahbendixbalgley.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/rohff-au-dela-de-mes-limites.jpeg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Rohff - Au delà de mes limites
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mix assist
+											</div>
+											<div class="hoverpersocustomer">
+												Hostile
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/313647" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://fr.wikipedia.org/wiki/Rohff" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/rohff-la-fierte-des-notres.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Rohff - La fierté des notres
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mix assist
+											</div>
+											<div class="hoverpersocustomer">
+												Hostile
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/299507" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://fr.wikipedia.org/wiki/Rohff" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/sintilair.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Sintilair
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/artist/566057" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://fr-fr.facebook.com/sintilair/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/stephanie-lemoine-sweet-talk.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Stephanie Lemoine
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/15738406" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.stephanielemoine.com/concerts" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/ti-harmon-story-to-tell.png)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Ti Harmon
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Blang Music
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.youtube.com/watch?v=bAo6VtB6zLc" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://blangmusic.fr/edition/story-to-tell-ti-harmon/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/tom-mcclung-declassified.png)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Tom Mc Clung - déclassified
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Blang Music
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="http://blangmusic.fr/edition/tom-mcclung-declassified/" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://blangmusic.fr/edition/tom-mcclung-declassified/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/tom-mcclung-this-is-you.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Tom Mc Clung
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+												Blang Music
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="http://blangmusic.fr/edition/this-is-you/" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://blangmusic.fr/edition/this-is-you/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/umberto-pagnini-latine.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Umberto Pagnini
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son - Mixage
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.youtube.com/watch?v=5nAjpkKFEtE" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrighthidden">
+												<a href="lien internet" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/vincent-bidal-trio-car-de-siecle.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Vincent Bidal
+											</div>
+											<div class="hoverpersofunction">
+												Prise de son
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://itunes.apple.com/fr/album/car-de-si%C3%A8cle/413246477" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.pianobleu.com/actuel/vincent-bidal-car-siecle-pianiste-piano.html" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/vitaa-fleur-de-toi.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Vitaa
+											</div>
+											<div class="hoverpersofunction">
+												Prise de voix
+											</div>
+											<div class="hoverpersocustomer">
+												Motown
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/120354" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://vitaa.fr/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/yann-tiersen-Les-retrouvailles.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Yann Tiersen
+											</div>
+											<div class="hoverpersofunction">
+												Rec et Mix assist
+											</div>
+											<div class="hoverpersocustomer">
+												Tot ou tard
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/en/album/1097788" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://yanntiersen.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/zazie-totem.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Zazie - Totem
+											</div>
+											<div class="hoverpersofunction">
+												Rec et Mix assist
+											</div>
+											<div class="hoverpersocustomer">
+												Mercury
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.deezer.com/fr/album/102515" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="http://www.zazieonline.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide album" style="background-image:url(./pics/Albums/zuzan-simurdova-fiser.jpg)">
+									<div class="overlay">
+										<div class="hoverpersotext">
+											<div class="hoverpersoproject">
+												Zuzana Simurdova
+											</div>
+											<div class="hoverpersofunction">
+												Mixage - Mastering
+											</div>
+											<div class="hoverpersocustomer">
+											</div>
+										</div>
+										<div class="hoverpersolinks">
+											<div class="linksleftvisible">
+												<a href="https://www.zuzanapianist.com/" target="_blank">
+													<img align="right" src="./pics/icons/iconeplay.png">
+												</a>
+											</div>
+											<div class="linksrightvisible">
+												<a href="https://www.zuzanapianist.com/" target="_blank">
+													<img src="./pics/icons/iconesavoirplus.png">
+												</a>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/la-maison-tellier-cyril-aufort.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Cyril Aufort
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son
-										</div>
-										<div class="hoverpersocustomer">
-											France 2
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/6041334" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=188757.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/liam-chagal.png" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Liam Chagal
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/15486142" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://liamchagal.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/manson-sempere.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Jeane Manson - Mathieu Sempere
-										</div>
-										<div class="hoverpersofunction">
-											Prise de voix
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/track/129257454" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.jeanemanson.com/fr/actualite/nouvelalbumamour/amour.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/matis_ombres_et_visages.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Mathis
-										</div>
-										<div class="hoverpersofunction">
-											Mixage
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://itunes.apple.com/fr/album/ombres-et-visages/id1081862082?app=itunes" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.mathisweb.fr/index.php" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/mihi-kim-giraud-le-cavalier-bleu.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Mihi Kim - Bertrand Giraud
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Anima record
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/10279480" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://mihikim.com/cd1/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/mikolaj-warszynski.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Mikolaj Warszynski
-										</div>
-										<div class="hoverpersofunction">
-											Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Anima record
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.mikolajwarszynski.net/music-page" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.mikolajwarszynski.net/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/mushin-nuits-rouges.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Mushin
-										</div>
-										<div class="hoverpersofunction">
-											Mastering
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="http://mushincontact.wixsite.com/mushinofficiel/musique" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://mushincontact.wixsite.com/mushinofficiel" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/nnae-la-transparente.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Nnae - La transparente
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.youtube.com/watch?time_continue=2&v=KQII2mYMCIE" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://annelajugie.wixsite.com/anne-lajugie" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/reiko-hozu-scriabism.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Reiko Hozu
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Anima record
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/10540406" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.reikohozu.com/fr/Home.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/reiko-hozu-souvenirs.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Reiko Hozu - Souvenirs
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Anima record
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/11481230" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.reikohozu.com/fr/Home.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/reiko-hozu-voyage-musical-bendix-balgley.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Reiko Hozu - Noah Bendix-Balgley
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Anima record
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/11232542" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://noahbendixbalgley.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/rohff-au-dela-de-mes-limites.jpeg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Rohff - Au delà de mes limites
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mix assist
-										</div>
-										<div class="hoverpersocustomer">
-											Hostile
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/313647" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://fr.wikipedia.org/wiki/Rohff" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/rohff-la-fierte-des-notres.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Rohff - La fierté des notres
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mix assist
-										</div>
-										<div class="hoverpersocustomer">
-											Hostile
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/299507" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://fr.wikipedia.org/wiki/Rohff" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/sintilair.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Sintilair
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/artist/566057" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://fr-fr.facebook.com/sintilair/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/stephanie-lemoine-sweet-talk.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Stephanie Lemoine
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/15738406" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.stephanielemoine.com/concerts" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/ti-harmon-story-to-tell.png" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Ti Harmon
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Blang Music
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.youtube.com/watch?v=bAo6VtB6zLc" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://blangmusic.fr/edition/story-to-tell-ti-harmon/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/tom-mcclung-declassified.png" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Tom Mc Clung - déclassified
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Blang Music
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="http://blangmusic.fr/edition/tom-mcclung-declassified/" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://blangmusic.fr/edition/tom-mcclung-declassified/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/tom-mcclung-this-is-you.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Tom Mc Clung
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-											Blang Music
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="http://blangmusic.fr/edition/this-is-you/" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://blangmusic.fr/edition/this-is-you/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/umberto-pagnini-latine.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Umberto Pagnini
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son - Mixage
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.youtube.com/watch?v=5nAjpkKFEtE" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrighthidden">
-											<a href="lien internet" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/vincent-bidal-trio-car-de-siecle.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Vincent Bidal
-										</div>
-										<div class="hoverpersofunction">
-											Prise de son
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://itunes.apple.com/fr/album/car-de-si%C3%A8cle/413246477" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.pianobleu.com/actuel/vincent-bidal-car-siecle-pianiste-piano.html" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/vitaa-fleur-de-toi.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Vitaa
-										</div>
-										<div class="hoverpersofunction">
-											Prise de voix
-										</div>
-										<div class="hoverpersocustomer">
-											Motown
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/120354" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://vitaa.fr/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/yann-tiersen-Les-retrouvailles.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Yann Tiersen
-										</div>
-										<div class="hoverpersofunction">
-											Rec et Mix assist
-										</div>
-										<div class="hoverpersocustomer">
-											Tot ou tard
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/en/album/1097788" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://yanntiersen.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/zazie-totem.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Zazie - Totem
-										</div>
-										<div class="hoverpersofunction">
-											Rec et Mix assist
-										</div>
-										<div class="hoverpersocustomer">
-											Mercury
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.deezer.com/fr/album/102515" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="http://www.zazieonline.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="imagealbums">
-								<img src="./pics/Albums/zuzan-simurdova-fiser.jpg" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Zuzana Simurdova
-										</div>
-										<div class="hoverpersofunction">
-											Mixage - Mastering
-										</div>
-										<div class="hoverpersocustomer">
-										</div>
-									</div>
-									<div class="hoverpersolinks">
-										<div class="linksleftvisible">
-											<a href="https://www.zuzanapianist.com/" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										<div class="linksrightvisible">
-											<a href="https://www.zuzanapianist.com/" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- COMMENT AJOUTER UNE IMAGE / UN ALBUM : Copier le code suivant. Penser a enlever les balises de commentaires -->
-							<!--DEBUT CODE 
-							<div class="image">
-								<img src="./pics/Albums/image.extension" />
-								<div class="overlay">
-									<div class="hoverpersotext">
-										<div class="hoverpersoproject">
-											Nom du projet
-										</div>
-										<div class="hoverpersofunction">
-											Le travail que vous y avez fait
-										</div>
-										<div class="hoverpersocustomer">
-											Eventuellement le client
-										</div>
-									</div>
-									<div class="hoverpersolinks"> 
-										CHOISIR visible OR hidden et supprimer cette ligne 
-										<div class="linksleftvisible">
-											<a href="lien internet" target="_blank">
-												<img align="right" src="./pics/icons/iconeplay.png">
-											</a>
-										</div>
-										CHOISIR visible OR hidden et supprimer cette ligne 
-										<div class="linksrightvisible">
-											<a href="lien internet" target="_blank">
-												<img src="./pics/icons/iconesavoirplus.png">
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						FIN CODE-->
-							<!-- -->
-						</section>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row titlerow  footer">
+					<div class="col-sm-12">
+						<p>Albums </p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script type="text/javascript">
-		$(".center").slick({
-			dots: true,
-			infinite: true,
-			centerMode: true,
-			slidesToShow: 5,
-			slidesToScroll: 3,
-			rows: 2,
-			accessibility: true,
-			focusOnSelect: true,
-			arrows: true,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			swipeToSlide: true,
-			responsive: [{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-				}
-			}, {
-				breakpoint: 800,
-				settings: {
-					slidesToShow: 2,
-				}
-			},{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 1,
-					dots:false,
-				}
-			}, {
-				breakpoint: 400,
-				settings: "unslick" // destroys slick
-			}]
-		});
-		
-		$(".regular").slick({
-			dots: true,
-			infinite: true,
-			centerMode: true,
-			slidesToShow: 3,
-			slidesToScroll: 3,
-			rows: 2,
-			accessibility: true,
-			focusOnSelect: true,
-			arrows: true,
-			autoplay: true,
-			autoplaySpeed: 2000,
-			swipeToSlide: true,
-			slidesPerRow: 2,
-			responsive: [{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-				}			
-}, {
-				breakpoint: 800,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-				}
-			}, {
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					dots:false,
-				}
-			}, {
+	
 
-				breakpoint: 300,
-				settings: "unslick" // destroys slick
-			}]
+	<script>
+		var swiper = new Swiper('.s1', {
+			/*effect: 'coverflow',*/
+			grabCursor: true,
+			nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',
+			centeredSlides: false,
+			slidesPerView: 'auto',
+			slidesPerColumn: 1,
+			spaceBetween: 10,
+			loop: false,
+			mousewheel: true,
+			/*runCallbacksOnInit:true,*/
+			/*coverflowEffect: {
+			  rotate: 50,
+			  stretch: 0,
+			  depth: 100,
+			  modifier: 1,
+			  slideShadows : true,
+			},*/
+			/*pagination: {
+			  el: '.swiper-pagination',
+			},*/
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			/*breakpoints: {
+				1280: {
+					slidesPerView: 6,
+					spaceBetween: 10,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 10,
+				},
+				800: {
+					slidesPerView: 4,
+					spaceBetween: 10,
+				},
+				600: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				}
+			}*/
+			
+			/*autoplay: {
+		  delay: 3000,
+		  disableOnInteraction:true,
+		},*/
 		});
-
+		var swiper = new Swiper('.s2', {
+			/*effect: 'coverflow',*/
+			grabCursor: true,
+			nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',
+			centeredSlides: false,
+			slidesPerView: 'auto',
+			slidesPerColumn: 1,
+			spaceBetween: 10,
+			loop: false,
+			mousewheel: true,
+			/*runCallbacksOnInit:true,*/
+			/*coverflowEffect: {
+			  rotate: 50,
+			  stretch: 0,
+			  depth: 100,
+			  modifier: 1,
+			  slideShadows : true,
+			},*/
+			/*pagination: {
+			  el: '.swiper-pagination',
+			},*/
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			/*breakpoints: {
+				1280: {
+					slidesPerView: 6,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 30,
+				},
+				800: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				600: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				}
+			}*/
+			
+			/*autoplay: {
+		  delay: 3000,
+		  disableOnInteraction:true,
+		},*/
+		});
+		var swiper = new Swiper('.s3', {
+			/*effect: 'coverflow',*/
+			grabCursor: true,
+			nextButton: '.swiper-button-next',
+        	prevButton: '.swiper-button-prev',
+			centeredSlides: false,
+			slidesPerView: 'auto',
+			slidesPerColumn: 1,
+			spaceBetween: 10,
+			loop: false,
+			mousewheel: true,
+			/*runCallbacksOnInit:true,*/
+			/*coverflowEffect: {
+			  rotate: 50,
+			  stretch: 0,
+			  depth: 100,
+			  modifier: 1,
+			  slideShadows : true,
+			},*/
+			/*pagination: {
+			  el: '.swiper-pagination',
+			},*/
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			/*breakpoints: {
+				1280: {
+					slidesPerView: 6,
+					spaceBetween: 40,
+				},
+				1024: {
+					slidesPerView: 5,
+					spaceBetween: 30,
+				},
+				800: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+				600: {
+					slidesPerView: 3,
+					spaceBetween: 10,
+				}
+			}*/
+			
+			/*autoplay: {
+		  delay: 3000,
+		  disableOnInteraction:true,
+		},*/
+		});
 
 	</script>
 </body>
