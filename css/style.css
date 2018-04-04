@@ -474,7 +474,7 @@ body{
         font-size:0.85em;
       }
     .album3:hover .overlay {
-        font-size:0.97em;
+        font-size:0.90em;
       }
       .album4:hover .overlay {
         font-size:0.8em;
@@ -486,7 +486,83 @@ body{
     /*margin-top:10px;*/
     width:100%;
     box-shadow: none;
+    }
 }
+@media screen and (min-width: 1440px) and (max-width: 1900px){
+    .album, .album2, .album3, .album4 {
+        background-position: center;
+        background-size: cover;
+        height: 170px;
+        width: 170px;
+    }
+    .horizontalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 345px;
+        height: 230px;
+    }
+    .verticalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 170px;
+        height: 230px;
+    }
+    .album:hover .overlay {
+        font-size:1.5em;
+      }
+    .album2:hover .overlay {
+        font-size:1.5em;
+      }
+    .album3:hover .overlay {
+        font-size:1.5em;
+      }
+    .album4:hover .overlay {
+        font-size:1.45em;
+      }
+    .verticalaffiche:hover .overlay {
+        font-size:1.5em;
+      }
+    .horizontalaffiche:hover .overlay {
+        font-size:1.5em;
+      }
+}
+@media screen and (min-width: 1900px){
+    .album, .album2, .album3, .album4 {
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+    }
+    .horizontalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 405px;
+        height: 270px;
+    }
+    .verticalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 200px;
+        height: 270px;
+    }
+    .album:hover .overlay {
+        font-size:1.5em;
+      }
+    .album2:hover .overlay {
+        font-size:1.5em;
+      }
+    .album3:hover .overlay {
+        font-size:1.5em;
+      }
+    .album4:hover .overlay {
+        font-size:1.5em;
+      }
+    .verticalaffiche:hover .overlay {
+        font-size:1.5em;
+      }
+    .horizontalaffiche:hover .overlay {
+        font-size:1.5em;
+      }
 }
 
 
