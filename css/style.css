@@ -1,10 +1,17 @@
+/*---------------------------------------------------------- HEADER-----------------------------------------*/
+.header{
+    margin-top:7px;
+    font-size:0.8em;
+    color:#f3ca06;
+    font-style: italic;
+}
 /*----------------------------------------------------------GENERAL STRUCTURE-----------------------------------------*/
 body{
     background-color: #626262;
 }
 .maincontainer{
     background-color: #626262;
-    margin-top:10px;
+    /*margin-top:10px;*/
     width:100%;
     box-shadow: 0px 2px 7px 4px #424242;
 }
@@ -12,12 +19,15 @@ body{
     display:none;
 }
 /*----------------------------------------------------------MENU TOP-----------------------------------------*/
-.titlerow{   
-    color:yellow;
+.titlerow, .titlerowresponsive{   
+    color:#f3ca06;
     padding-top:5px;
     padding-left:25px;
     width:100%;
     line-height: 5px;
+}
+.titlerowresponsive{
+    display:none;
 }
 .titlerowmarc{
     background-color: black;
@@ -78,18 +88,38 @@ body{
 .soundcloud:hover .nothovericon{
     display:none;
 }
+/*----------------------------------------------------------MENU: dropdown part for contact -----------------------------------------*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 10;
+    background-color: #f3ca06;
+    color:black;
+    line-height:15px;
+    left:-48px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /*---------------------------------------------------------- SUBTITLES -----------------------------------------*/
-.subtitlerow{   
-    margin-top:5px;
+.subtitlerow, .subtitlerowresponsive{   
+    margin-top:15px;
     padding-left:40px;
     padding-right:15px;
     width:100%;
 }
-.subtitlerow .subtitle{
+.subtitlerow .subtitle, .subtitlerowresponsive .subtitle{
     background-color: #424242;
     height:30px;
     color:#f3ca06;
     padding-top:1px;
+}
+.subtitlerowresponsiveup, .subtitlerowresponsivedown{
+    display:none;
 }
 /*----------------------------------------------------------FONTS SETTINGS-----------------------------------------*/
 @font-face {
@@ -104,26 +134,30 @@ body{
     font-family: "MICROGME";
     src: url("../fonts/MICROGME.ttf");
 }
-.titlerowmarc, .titlerowothermenus{
-    font-family:"MICROGBE";
+.titlerowmarc{
+    font-family:"MICROGME";
 }
-.marcsubtitle{
+.titlerowothermenus{
+    font-family:"MICROGBE";
+    letter-spacing:1px;
+}
+.marcsubtitle, .marcsubtitle2{
     font-size: 0.9em;
     font-weight: lighter;
     color:#f3ca06;
     letter-spacing:2px;
 }
 .marc{
+    font-family:"MICROGBE";
     font-size:1.5em;
     color:white;
     letter-spacing:4px;
-    font-weight: lighter;
 }
-.subtitlerow{
+.subtitlerow, .subtitlerowresponsive{
     font-family:"almontewoodgrain";
     font-size:1.4em;
     font-style: italic;
-    color:yellow;
+    color:#f3ca06;
 }
 /*----------------------------------------------------------ROW OF SLIDER  -----------------------------------------*/
 .sliderrow{   
@@ -132,7 +166,7 @@ body{
     padding-right:25px;
     width:100%;
 }
-/*----------------------------------------------------------SLIDER SPECIFICITIES -----------------------------------------*/
+/*----------------------------------------------------------SLIDER HOVER SPECIFICITIES -----------------------------------------*/
 .overlay {
     display: none;
     width: 100%;
@@ -147,13 +181,42 @@ body{
    background-color: 868686;
    opacity:0.85;
    font-size:1.2em;
+   letter-spacing: 0.5px;
  }
+ .album:hover .overlay {
+    display: block;
+    background-color: 868686;
+    opacity:0.85;
+    font-size:1.1em;
+    letter-spacing:0.5px;
+  }
+  .album3:hover .overlay {
+    display: block;
+    background-color: 868686;
+    opacity:0.85;
+    font-size:1.1em;
+    letter-spacing:0.5px;
+  }
+.album2:hover .overlay {
+    display: block;
+    background-color: 868686;
+    opacity:0.85;
+    font-size:0.95em;
+    letter-spacing:0.5px;
+  }
+  .album4:hover .overlay {
+    display: block;
+    background-color: 868686;
+    opacity:0.85;
+    font-size:0.95em;
+    letter-spacing:0.5px;
+  }
  .hoverpersotext{
      height:80%;
      line-height: initial;
  }
  .hoverpersolinks{
-     color:yellow;
+     color:#f3ca06;
      height:20%;
  }
  .hoverpersolinks img{
@@ -200,13 +263,14 @@ body{
 .linksrighthidden, .linkslefthidden, .linksmiddlehidden{
     display:none;
 }
-/*----------------------------------------------------------SLIDER SPECIAL CORRECTIONS  -----------------------------------------*/
+/*----------------------------------------------------------SLIDER SPECIAL CORRECTIONS FROM ORIGINAL CSS--------------------------------------*/
 .swiper-container s1, .swiper-container s2, .swiper-container s3, .swiper-container s4 {
     width: 100%;
     padding-top: 0px;
     padding-bottom: 0px;
+    cursor:grab;
 }
-.album {
+.album, .album2, .album3, .album4 {
     background-position: center;
     background-size: cover;
     height: 117px;
@@ -235,6 +299,7 @@ body{
     background-color:#868686;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .swiper-button-prev-s1, .swiper-button-prev-s2, .swiper-button-prev-s3, .swiper-button-prev-s4 {
     position: absolute;
@@ -247,6 +312,7 @@ body{
     background-color:#868686;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .swiper-button-prev-s1.swiper-button-disabled, .swiper-button-prev-s2.swiper-button-disabled, .swiper-button-prev-s3.swiper-button-disabled, .swiper-button-prev-s4.swiper-button-disabled,
 .swiper-button-next-s1.swiper-button-disabled, .swiper-button-next-s2.swiper-button-disabled, .swiper-button-next-s3.swiper-button-disabled, .swiper-button-next-s4.swiper-button-disabled {
@@ -266,5 +332,166 @@ body{
   /*right: 10px;
   left: auto;*/
 }
+/*----------------------------------------------------------RESPONSIVE DESIGN --------------------------------------*/
+@media screen and (min-width: 200px) and (max-width: 375px){
+    .subtitlerow, .subtitlerowresponsive, .subtitlerowresponsiveup, .subtitlerowresponsivedown{
+        padding-left:25px;
+        padding-right:0px;
+    }
+    .sliderrow{
+        padding-left:35px;
+        padding-right:10px;
+    }
+    .container{
+        padding-right:0px;
+        border:none;
+        margin-right:0px;
+        width:100%;    }
+}
+@media screen and (min-width: 200px) and (max-width: 449px){
+    .marc, .marcsubtitle {
+        line-height:20px;
+    }
+    .titlerowmarc{
+        height:110px;
+    }
+    .titlerowothermenus{
+        height:20px;
+        padding-top:2px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 361px){
+    .titlerowmarc{
+        height:110px;
+    }
+}
+@media screen and (min-width: 361px) and (max-width: 419px){
+    .titlerowmarc{
+        height:90px;
+    }
+}
+@media screen and (min-width: 420px) and (max-width: 449px){
+    .titlerowmarc{
+        height:70px;
+    }
+}
+@media screen and (min-width: 405px) and (max-width: 449px){
+    .titlerowothermenus{
+        height:20px;
+        padding-top:2px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 768px){
+    .marc, .marcsubtitle{
+        text-align:center;
+    }
+    .titlerowothermenus{
+        height:20px;
+        padding-top:2px;
+        text-align:center; 
+    }
+    .titlerowsocialnetwork{
+        text-align:center; 
+        height:40px;
+    }
+    .facebook, .soundcloud{
+        width:50%;
+        height:100%;
+        padding-top:5px;
+    }
+    .dropdown-content {
+        min-width: 160px;
+        right:-60px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .titlerowresponsive{
+        display:block;
+    }
+    .titlerow{
+        display:none;
+    }
+    .titlerowothermenus{
+        height:35px;
+        padding-top:10px;
+    }
+    .titlerowothermenus:hover{
+        height:35px;
+        padding-top:10px;
+    }
+    .titlerowmarc{
+        height:70px;
+    }
+    .marcsubtitle, .marcsubtitle2{
+        line-height:2px;
+    }
+    .marcsubtitle2{
+        padding-left:40px;
+    }
+    .dropdown-content {
+        top:35px;
+    }
+    .facebook, .soundcloud{
+        padding-top:0px;
+    }
+    .titlerowsocialnetwork{
+        padding-top:0px;   
+        height:35px; 
+    }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    .facebook img, .soundcloud img{
+        width:20px;
+        padding-top:5px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 332px){
+    .album, .album2, .album3, .album4 {
+        background-position: center;
+        background-size: cover;
+        height: 102px;
+        width: 102px;
+    }
+    .horizontalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 209px;
+        height: 140px;
+    }
+    .verticalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 102px;
+        height: 140px;
+    }
+    .swiper-slide:hover .overlay {
+        font-size:1.1em;
+      }
+      .album:hover .overlay {
+        font-size:1.1em;
+      }
+    .album2:hover .overlay {
+        font-size:0.85em;
+      }
+    .album3:hover .overlay {
+        font-size:0.97em;
+      }
+      .album4:hover .overlay {
+        font-size:0.8em;
+      }
+}
+@media screen and (min-width: 200px) and (max-width: 767px){
+.maincontainer{
+    background-color: #626262;
+    /*margin-top:10px;*/
+    width:100%;
+    box-shadow: none;
+}
+}
+
+
+
+
+
 
 
