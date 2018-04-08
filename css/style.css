@@ -5,6 +5,11 @@
     color:#f3ca06;
     font-style: italic;
 }
+.header a{
+    font-size:0.8em;
+    color:#f3ca06;
+    font-style: italic;
+}
 /*----------------------------------------------------------GENERAL STRUCTURE-----------------------------------------*/
 body{
     background-color: #626262;
@@ -88,22 +93,14 @@ body{
 .soundcloud:hover .nothovericon{
     display:none;
 }
-/*----------------------------------------------------------MENU: dropdown part for contact -----------------------------------------*/
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 10;
+/*----------------------------------------------------------MENU: specialcontact part for contact -----------------------------------------*/
+.titlecontact{
     background-color: #f3ca06;
+    height:50px;
     color:black;
-    line-height:15px;
-    left:-48px;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
+    border: 1px solid #626262;
+    padding-top:20px;
+    width:100%;
 }
 /*---------------------------------------------------------- SUBTITLES -----------------------------------------*/
 .subtitlerow, .subtitlerowresponsive{   
@@ -127,18 +124,18 @@ body{
     src: url("../fonts/almontewoodgrain.otf"); 
 }	
 @font-face {
-    font-family: 'MICROGBE';
-    src: url("../fonts/MICROGBE.ttf"); 
+    font-family: 'microgbe';
+    src: url("../fonts/microgbe.otf"); 
 }
 @font-face{
-    font-family: "MICROGME";
-    src: url("../fonts/MICROGME.ttf");
+    font-family: "microgme";
+    src: url("../fonts/microgme.otf");
 }
 .titlerowmarc{
-    font-family:"MICROGME";
+    font-family:"microgme";
 }
 .titlerowothermenus{
-    font-family:"MICROGBE";
+    font-family:"microgbe";
     letter-spacing:1px;
 }
 .marcsubtitle, .marcsubtitle2{
@@ -148,7 +145,7 @@ body{
     letter-spacing:2px;
 }
 .marc{
-    font-family:"MICROGBE";
+    font-family:"microgbe";
     font-size:1.5em;
     color:white;
     letter-spacing:4px;
@@ -227,20 +224,20 @@ body{
  }
  .hoverpersoproject{
      color:#ffffff;
-     font-family:"MICROGBE";
+     font-family:"microgbe";
  }
  .hoverpersofunction{
      color:#f3ca06;
-     font-family:"MICROGME";
+     font-family:"microgme";
      letter-spacing:1px;
  }
  .hoverpersocustomer{
     color:#000000;
-    font-family:"MICROGBE";
+    font-family:"microgbe";
 }
 .hoverpersooption{
     color:#ffffff;
-    font-family:"MICROGME";
+    font-family:"microgme";
 }
  .linksleftvisible{
 	width:33%;
@@ -333,6 +330,44 @@ body{
   left: auto;*/
 }
 /*----------------------------------------------------------RESPONSIVE DESIGN --------------------------------------*/
+@media screen and (min-width: 200px) and (max-width: 332px){
+    .album, .album2, .album3, .album4 {
+        background-position: center;
+        background-size: cover;
+        height: 102px;
+        width: 102px;
+    }
+    .horizontalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 209px;
+        height: 140px;
+    }
+    .verticalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 102px;
+        height: 140px;
+    }
+    .swiper-slide:hover .overlay {
+        font-size:1.1em;
+      }
+    .album:hover .overlay {
+        font-size:1.1em;
+      }
+    .album2:hover .overlay {
+        font-size:0.85em;
+      }
+    .album3:hover .overlay {
+        font-size:0.90em;
+      }
+    .album4:hover .overlay {
+        font-size:0.8em;
+    }
+    .subtitlerowresponsive{
+        font-size:1.3em;
+    }
+}
 @media screen and (min-width: 200px) and (max-width: 375px){
     .subtitlerow, .subtitlerowresponsive, .subtitlerowresponsiveup, .subtitlerowresponsivedown{
         padding-left:25px;
@@ -352,12 +387,13 @@ body{
     .marc, .marcsubtitle {
         line-height:20px;
     }
-    .titlerowmarc{
-        height:110px;
-    }
-    .titlerowothermenus{
-        height:20px;
-        padding-top:2px;
+}
+@media screen and (min-width: 200px) and (max-width: 767px){
+    .maincontainer{
+        background-color: #626262;
+        /*margin-top:10px;*/
+        width:100%;
+        box-shadow: none;
     }
 }
 @media screen and (min-width: 200px) and (max-width: 361px){
@@ -381,14 +417,21 @@ body{
         padding-top:2px;
     }
 }
-@media screen and (min-width: 200px) and (max-width: 768px){
+@media screen and (min-width: 200px) and (max-width: 767px){
     .marc, .marcsubtitle{
         text-align:center;
     }
     .titlerowothermenus{
-        height:20px;
-        padding-top:2px;
+        height:40px;
+        padding-top:12px;
         text-align:center; 
+    }
+    .titlerowothermenus:hover{
+        background-color: #f3ca06;
+        height:40px;
+        color:black;
+        border: 1px solid #626262;
+        padding-top:12px;
     }
     .titlerowsocialnetwork{
         text-align:center; 
@@ -399,9 +442,8 @@ body{
         height:100%;
         padding-top:5px;
     }
-    .dropdown-content {
-        min-width: 160px;
-        right:-60px;
+    .subtitlerow, .subtitlerowresponsive{
+        text-align:center;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -428,9 +470,6 @@ body{
     .marcsubtitle2{
         padding-left:40px;
     }
-    .dropdown-content {
-        top:35px;
-    }
     .facebook, .soundcloud{
         padding-top:0px;
     }
@@ -443,49 +482,6 @@ body{
     .facebook img, .soundcloud img{
         width:20px;
         padding-top:5px;
-    }
-}
-@media screen and (min-width: 200px) and (max-width: 332px){
-    .album, .album2, .album3, .album4 {
-        background-position: center;
-        background-size: cover;
-        height: 102px;
-        width: 102px;
-    }
-    .horizontalaffiche {
-        background-position: center;
-        background-size: cover;
-        width: 209px;
-        height: 140px;
-    }
-    .verticalaffiche {
-        background-position: center;
-        background-size: cover;
-        width: 102px;
-        height: 140px;
-    }
-    .swiper-slide:hover .overlay {
-        font-size:1.1em;
-      }
-      .album:hover .overlay {
-        font-size:1.1em;
-      }
-    .album2:hover .overlay {
-        font-size:0.85em;
-      }
-    .album3:hover .overlay {
-        font-size:0.90em;
-      }
-      .album4:hover .overlay {
-        font-size:0.8em;
-      }
-}
-@media screen and (min-width: 200px) and (max-width: 767px){
-.maincontainer{
-    background-color: #626262;
-    /*margin-top:10px;*/
-    width:100%;
-    box-shadow: none;
     }
 }
 @media screen and (min-width: 1440px) and (max-width: 1900px){
@@ -564,8 +560,18 @@ body{
         font-size:1.5em;
       }
 }
-
-
+/*----------------------------------------------------------PAGE ABOUT-----------------------------------------*/
+.about{
+    font-family:"microgme";
+    color:white;
+    padding-left:35px;
+    padding-bottom:50px;
+    padding-top:10px;
+    padding-right:35px;
+}
+.about img{
+    width:100%;
+}
 
 
 
