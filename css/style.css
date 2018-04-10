@@ -1006,6 +1006,554 @@ body{
         letter-spacing: 0.5px; 
     }
 }
+@media screen and (min-width: 555px)  and (max-width: 589px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 310px;
+        height: 205px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 155px;
+        height: 205px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 155px;
+        height: 155px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 510px)  and (max-width: 554px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 280px;
+        height: 187px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 187px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 140px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 480px)  and (max-width: 509px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 175px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 175px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 130px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 435px)  and (max-width: 479px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 230px;
+        height: 157px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 115px;
+        height: 157px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 115px;
+        height: 115px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.9em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.9em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 410px)  and (max-width: 434px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 320px;
+        height: 205px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 160px;
+        height: 205px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 160px;
+        height: 160px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.4em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 390px)  and (max-width: 409px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 200px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 200px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.4em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 355px)  and (max-width: 389px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 280px;
+        height: 195px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 195px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 140px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 335px)  and (max-width: 354px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 175px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 175px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 130px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 315px)  and (max-width: 334px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 240px;
+        height: 160px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 120px;
+        height: 160px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.9em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 295px)  and (max-width: 314px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 220px;
+        height: 145px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 110px;
+        height: 145px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 110px;
+        height: 110px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.95em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.9em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.80em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 200px)  and (max-width: 294px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 204px;
+        height: 135px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 102px;
+        height: 135px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 102px;
+        height: 102px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.90em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.80em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.80em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 200px)  and (max-width: 299px){
+    .subtitlestaticresponsive{   
+        margin-top:15px;
+        margin-bottom:5px;
+        width:100%;
+        background-color: #424242;
+        height:30px;
+        color:#f3ca06;
+        padding-top:1px;
+        font-family:"almontewoodgrain";
+        font-size:1.25em;
+        font-style: italic;
+    }
+    .subtitlestatic{
+        display:none;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 767px){
+    .subtitlestaticresponsive{   
+        margin-top:15px;
+        margin-bottom:5px;
+        width:100%;
+        background-color: #424242;
+        height:30px;
+        color:#f3ca06;
+        padding-top:1px;
+        font-family:"almontewoodgrain";
+        font-size:1.4em;
+        font-style: italic;
+    }
+    .subtitlestatic{
+        display:none;
+    }
+}
 @media screen and (min-width: 768px){
     .subtitlestatic{   
         margin-top:15px;
@@ -1023,20 +1571,4 @@ body{
         display:none;
     }
 }
-@media screen and (max-width: 767px){
-    .subtitlestaticresponsive{   
-        margin-top:15px;
-        margin-bottom:5px;
-        width:100%;
-        background-color: #424242;
-        height:30px;
-        color:#f3ca06;
-        padding-top:1px;
-        font-family:"almontewoodgrain";
-        font-size:1.4em;
-        font-style: italic;
-    }
-    .subtitlestatic{
-        display:none;
-    }
-}
+
