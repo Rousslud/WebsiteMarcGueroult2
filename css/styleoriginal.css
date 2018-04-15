@@ -34,14 +34,14 @@ body{
 .titlerowresponsive{
     display:none;
 }
-.titlerowmarc, .titlerowmarcStatic{
+.titlerowmarc{
     background-color: black;
     border: 1px solid #626262;
     height:50px;
     padding-top:10px;
     line-height:10px;
 }
-.titlerowothermenus,.titlerowothermenusStatic{
+.titlerowothermenus{
     background-color: black;
     height:50px;
     color:#f3ca06;
@@ -49,7 +49,7 @@ body{
     padding-top:30px;
     line-height:10px;
 }
-.titlerowothermenus:hover,.titlerowothermenusStatic:hover{
+.titlerowothermenus:hover{
     background-color: #f3ca06;
     height:50px;
     color:black;
@@ -94,37 +94,13 @@ body{
     display:none;
 }
 /*----------------------------------------------------------MENU: specialcontact part for contact -----------------------------------------*/
-.titlecontactPortable,.titlecontactPortableStatic,.titlecontactMail,.titlecontactMailStatic, .titlecontact{
+.titlecontact{
     background-color: #f3ca06;
+    height:50px;
     color:black;
     border: 1px solid #626262;
     padding-top:20px;
     width:100%;
-    height:50px;
-}
-@media screen and (min-width: 200px) and (max-width: 331px){
-    .titlecontactPortable{
-        height:70px;
-        line-height:15px;
-    }
-}
-@media screen and (min-width: 200px) and (max-width: 352px){
-    .titlecontactMail{
-        height:70px;
-        line-height:15px;
-    }
-}
-@media screen and (min-width: 200px) and (max-width: 349px){
-    .titlecontactPortableStatic{
-        height:70px;
-        line-height:15px;
-    }
-}
-@media screen and (min-width: 200px) and (max-width: 399px){
-    .titlecontactMailStatic{
-        height:70px;
-        line-height:15px;
-    }
 }
 /*---------------------------------------------------------- SUBTITLES -----------------------------------------*/
 .subtitlerow, .subtitlerowresponsive{   
@@ -145,46 +121,34 @@ body{
     src: url("../fonts/almontewoodgrain.otf"); 
 }	
 @font-face {
-    font-family: "almontewoodgrainie";
-    src: url('../fonts/almontewoodgrainie.eot'); 
-}	
-@font-face {
     font-family: 'microgbe';
     src: url("../fonts/microgbe.otf"); 
-}
-@font-face {
-    font-family: "microgbeie";
-    src: url('../fonts/microgbe.eot'); 
 }
 @font-face{
     font-family: "microgme";
     src: url("../fonts/microgme.otf");
 }
-@font-face{
-    font-family: "microgmeie";
-    src: url('../fonts/microgme.eot');
+.titlerowmarc{
+    font-family:"microgme";
 }
-.titlerowmarc, .titlerowmarcStatic{
-    font-family:"microgme", "microgmeie";
-}
-.titlerowothermenus,.titlerowothermenusStatic, .titlecontactPortable, .titlecontactPortableStatic, .titlecontactMail, .titlecontactMailStatic, .titlecontact{
-    font-family:"microgbe", "microgbeie";
+.titlerowothermenus{
+    font-family:"microgbe";
     letter-spacing:1px;
 }
-.marcsubtitle, .marcsubtitle2, .marcsubtitle3{
+.marcsubtitle, .marcsubtitle2{
     font-size: 0.9em;
     font-weight: lighter;
     color:#f3ca06;
     letter-spacing:2px;
 }
 .marc{
-    font-family:"microgbe", "microgbeie";
+    font-family:"microgbe";
     font-size:1.5em;
     color:white;
     letter-spacing:4px;
 }
 .subtitlerow, .subtitlerowresponsive{
-    font-family:"almontewoodgrain", "almontewoodgrainie";
+    font-family:"almontewoodgrain";
     font-size:1.4em;
     font-style: italic;
     color:#f3ca06;
@@ -257,26 +221,31 @@ body{
  }
  .hoverpersoproject{
      color:#ffffff;
-     font-family:"microgbe", "microgbeie";
+     font-family:"microgbe";
  }
  .hoverpersofunction{
      color:#f3ca06;
-     font-family:"microgme", "microgmeie";
+     font-family:"microgme";
      letter-spacing:1px;
  }
  .hoverpersocustomer{
     color:#000000;
-    font-family:"microgbe", "microgbeie";
+    font-family:"microgbe";
 }
 .hoverpersooption{
     color:#ffffff;
-    font-family:"microgme", "microgmeie";
+    font-family:"microgme";
 }
  .linksleftvisible{
 	width:33%;
 	float:left;
     height:100%;
 }
+/**.linksmiddlevisible{
+    width:33%;
+    float:left;
+    height:100%;
+}*/
 .linksrightvisible{
 	width:66%;
 	float:right;
@@ -320,7 +289,6 @@ body{
     width: 20px;
     height: 100%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
     margin-top: 0px;
     background-color:#868686;
     background-position: center;
@@ -334,7 +302,6 @@ body{
     width: 20px;
     height: 100%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
     margin-top: 0px;
     background-color:#868686;
     background-position: center;
@@ -398,7 +365,7 @@ body{
         font-size:1.3em;
     }
 }
-@media screen and (min-width: 200px) and (max-width: 767px){
+@media screen and (min-width: 200px) and (max-width: 375px){
     .subtitlerow, .subtitlerowresponsive, .subtitlerowresponsiveup, .subtitlerowresponsivedown{
         padding-left:25px;
         padding-right:0px;
@@ -411,8 +378,9 @@ body{
         padding-right:0px;
         border:none;
         margin-right:0px;
-        width:100%;    
-    }
+        width:100%;    }
+}
+@media screen and (min-width: 200px) and (max-width: 449px){
     .marc, .marcsubtitle {
         line-height:20px;
     }
@@ -425,17 +393,17 @@ body{
         box-shadow: none;
     }
 }
-@media screen and (min-width: 200px) and (max-width: 360px){
+@media screen and (min-width: 200px) and (max-width: 361px){
     .titlerowmarc{
         height:110px;
     }
 }
-@media screen and (min-width: 361px) and (max-width: 404px){
+@media screen and (min-width: 361px) and (max-width: 419px){
     .titlerowmarc{
         height:90px;
     }
 }
-@media screen and (min-width: 405px) and (max-width: 767px){
+@media screen and (min-width: 420px) and (max-width: 449px){
     .titlerowmarc{
         height:70px;
     }
@@ -450,12 +418,12 @@ body{
     .marc, .marcsubtitle{
         text-align:center;
     }
-    .titlerowothermenus,.titlerowothermenusStatic{
+    .titlerowothermenus{
         height:40px;
         padding-top:12px;
         text-align:center; 
     }
-    .titlerowothermenus:hover,.titlerowothermenusStatic:hover{
+    .titlerowothermenus:hover{
         background-color: #f3ca06;
         height:40px;
         color:black;
@@ -482,19 +450,22 @@ body{
     .titlerow{
         display:none;
     }
-    .titlerowothermenus,.titlerowothermenusStatic{
+    .titlerowothermenus{
         height:35px;
         padding-top:10px;
     }
-    .titlerowothermenus:hover,.titlerowothermenusStatic:hover{
+    .titlerowothermenus:hover{
         height:35px;
         padding-top:10px;
     }
-    .titlerowmarc, .titlerowmarcStatic{
+    .titlerowmarc{
         height:70px;
     }
-    .marcsubtitle2, .marcsubtitle3{
-        line-height:10px;
+    .marcsubtitle, .marcsubtitle2{
+        line-height:2px;
+    }
+    .marcsubtitle2{
+        padding-left:40px;
     }
     .facebook, .soundcloud{
         padding-top:0px;
@@ -510,7 +481,7 @@ body{
         padding-top:5px;
     }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1900px){
     .album, .album2, .album3, .album4 {
         background-position: center;
         background-size: cover;
@@ -548,10 +519,47 @@ body{
         font-size:1.5em;
       }
 }
-
+@media screen and (min-width: 1900px){
+    .album, .album2, .album3, .album4 {
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 200px;
+    }
+    .horizontalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 405px;
+        height: 270px;
+    }
+    .verticalaffiche {
+        background-position: center;
+        background-size: cover;
+        width: 200px;
+        height: 270px;
+    }
+    .album:hover .overlay {
+        font-size:1.5em;
+      }
+    .album2:hover .overlay {
+        font-size:1.5em;
+      }
+    .album3:hover .overlay {
+        font-size:1.5em;
+      }
+    .album4:hover .overlay {
+        font-size:1.5em;
+      }
+    .verticalaffiche:hover .overlay {
+        font-size:1.5em;
+      }
+    .horizontalaffiche:hover .overlay {
+        font-size:1.5em;
+      }
+}
 /*----------------------------------------------------------PAGE ABOUT-----------------------------------------*/
 .about{
-    font-family:"microgme", "microgmeie";
+    font-family:"microgme";
     color:white;
     padding-left:35px;
     padding-bottom:50px;
@@ -573,107 +581,415 @@ body{
     float:left;
     border:2.5px #626262 solid;
 }
-@media (max-width: 549px) {
-    .staticleft{
-        float:left;
-        width: 100%;
-    }
-    .staticright{
-        float:right;
-        width: 100%;
-    }
-}
-@media (min-width: 550px) {
-    .staticleft{
-        float:left;
-        width: 49%;
-    }
-    .staticright{
-        float:right;
-        width: 49%;
-    }
-}
 /*---------------------------------------------------------- RESPONSIVE DESIGN -----------------------------------------------------------------------*/
-@media (max-width: 299px) {
+@media screen and (min-width: 1200px){
     .static-slide-film-h{
         background-position: center;
         background-size: cover;
-        width: 234px;
-        height: 156px;
+        width: 250px;
+        height: 165px;
     }
     .static-slide-film-v{
         background-position: center;
         background-size: cover;
-        width: 117px;
-        height: 156px;
+        width: 125px;
+        height: 165px;
     }
     .static-slide-album, .static-slide-album2, .static-slide-album3{
         background-position: center;
         background-size: cover;
-        width: 117px;
-        height: 117px;
+        width: 125px;
+        height: 125px;
     }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.25em;
+        font-size:1.2em;
         letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.1em;
-        letter-spacing: 0.5px; 
     }
     .static-slide-album2:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:0.95em;
+        font-size:1.05em;
         letter-spacing: 0.5px; 
     }
     .static-slide-album3:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:0.90em;
+        font-size:1em;
         letter-spacing: 0.5px; 
     }
 }
-@media (min-width: 300px) {
+@media screen and (min-width: 992px)  and (max-width: 1199px){
     .static-slide-film-h{
         background-position: center;
         background-size: cover;
-        width: 246px;
-        height: 164px;
+        width: 270px;
+        height: 180px;
     }
     .static-slide-film-v{
         background-position: center;
         background-size: cover;
-        width: 123px;
-        height: 164px;
+        width: 135px;
+        height: 180px;
     }
     .static-slide-album, .static-slide-album2, .static-slide-album3{
         background-position: center;
         background-size: cover;
-        width: 123px;
-        height: 123px;
+        width: 135px;
+        height: 135px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.15em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.15em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 768px)  and (max-width: 991px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 290px;
+        height: 190px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 145px;
+        height: 190px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 145px;
+        height: 145px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.15em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.15em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 741px)  and (max-width: 767px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 214px;
+        height: 145px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 107px;
+        height: 145px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 107px;
+        height: 107px;
     }
     .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.25em;
+        font-size:1.1em;
         letter-spacing: 0.5px;
     }
     .static-slide-album:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.85em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.80em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 720px)  and (max-width: 740px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 210px;
+        height: 140px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 105px;
+        height: 140px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 105px;
+        height: 105px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.9em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.8em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.8em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 690px)  and (max-width: 719px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 190px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 190px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 650px)  and (max-width: 689px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 280px;
+        height: 185px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 185px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 140px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
         font-size:1.1em;
         letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 630px)  and (max-width: 649px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 270px;
+        height: 180px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 135px;
+        height: 180px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 135px;
+        height: 135px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.05em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 610px)  and (max-width: 629px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 175px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 175px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 130px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.05em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 590px)  and (max-width: 609px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 250px;
+        height: 165px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 125px;
+        height: 165px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 125px;
+        height: 125px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
     }
     .static-slide-album2:hover .overlay{
         display: block;
@@ -686,42 +1002,35 @@ body{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:0.95em;
+        font-size:1em;
         letter-spacing: 0.5px; 
     }
 }
-@media (min-width: 350px) {
+@media screen and (min-width: 555px)  and (max-width: 589px){
     .static-slide-film-h{
         background-position: center;
         background-size: cover;
-        width: 296px;
-        height: 197px;
+        width: 310px;
+        height: 205px;
     }
     .static-slide-film-v{
         background-position: center;
         background-size: cover;
-        width: 148px;
-        height: 197px;
+        width: 155px;
+        height: 205px;
     }
     .static-slide-album, .static-slide-album2, .static-slide-album3{
         background-position: center;
         background-size: cover;
-        width: 148px;
-        height: 148px;
+        width: 155px;
+        height: 155px;
     }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
         font-size:1.3em;
         letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px; 
     }
     .static-slide-album2:hover .overlay{
         display: block;
@@ -738,18 +1047,107 @@ body{
         letter-spacing: 0.5px; 
     }
 }
-@media (min-width: 400px) {
+@media screen and (min-width: 510px)  and (max-width: 554px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 280px;
+        height: 187px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 187px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 140px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 480px)  and (max-width: 509px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 175px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 175px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 130px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 435px)  and (max-width: 479px){
     .static-slide-film-h{
         background-position: center;
         background-size: cover;
         width: 230px;
-        height: 153px;
+        height: 157px;
     }
     .static-slide-film-v{
         background-position: center;
         background-size: cover;
         width: 115px;
-        height: 153px;
+        height: 157px;
     }
     .static-slide-album, .static-slide-album2, .static-slide-album3{
         background-position: center;
@@ -768,14 +1166,14 @@ body{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.05em;
-        letter-spacing: 0.5px; 
+        font-size:1em;
+        letter-spacing: 0.5px;
     }
     .static-slide-album2:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:0.95em;
+        font-size:0.9em;
         letter-spacing: 0.5px; 
     }
     .static-slide-album3:hover .overlay{
@@ -786,24 +1184,120 @@ body{
         letter-spacing: 0.5px; 
     }
 }
-@media (min-width: 450px) {
+@media screen and (min-width: 410px)  and (max-width: 434px){
     .static-slide-film-h{
         background-position: center;
         background-size: cover;
-        width: 262px;
-        height: 174px;
+        width: 320px;
+        height: 205px;
     }
     .static-slide-film-v{
         background-position: center;
         background-size: cover;
-        width: 131px;
-        height: 174px;
+        width: 160px;
+        height: 205px;
     }
     .static-slide-album, .static-slide-album2, .static-slide-album3{
         background-position: center;
         background-size: cover;
-        width: 131px;
-        height: 131px;
+        width: 160px;
+        height: 160px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.4em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 390px)  and (max-width: 409px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 200px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 200px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.4em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.3em;
+        letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 355px)  and (max-width: 389px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 280px;
+        height: 195px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 195px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 140px;
+        height: 140px;
     }
     .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
         display: block;
@@ -817,7 +1311,55 @@ body{
         background-color: 868686;
         opacity:0.85;
         font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album2:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
         letter-spacing: 0.5px; 
+    }
+    .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 335px)  and (max-width: 354px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 175px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 175px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 130px;
+        height: 130px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.2em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
     }
     .static-slide-album2:hover .overlay{
         display: block;
@@ -834,55 +1376,7 @@ body{
         letter-spacing: 0.5px; 
     }
 }
-@media (min-width: 500px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 295px;
-        height: 196px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 147.5px;
-        height: 196px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 147.5px;
-        height: 147.5px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 550px) {
+@media screen and (min-width: 315px)  and (max-width: 334px){
     .static-slide-film-h{
         background-position: center;
         background-size: cover;
@@ -905,15 +1399,15 @@ body{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.3em;
+        font-size:1.1em;
         letter-spacing: 0.5px;
     }
     .static-slide-album:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.1em;
-        letter-spacing: 0.5px; 
+        font-size:1em;
+        letter-spacing: 0.5px;
     }
     .static-slide-album2:hover .overlay{
         display: block;
@@ -923,565 +1417,106 @@ body{
         letter-spacing: 0.5px; 
     }
     .static-slide-album3:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:0.9em;
+        letter-spacing: 0.5px; 
+    }
+}
+@media screen and (min-width: 295px)  and (max-width: 314px){
+    .static-slide-film-h{
+        background-position: center;
+        background-size: cover;
+        width: 220px;
+        height: 145px;
+    }
+    .static-slide-film-v{
+        background-position: center;
+        background-size: cover;
+        width: 110px;
+        height: 145px;
+    }
+    .static-slide-album, .static-slide-album2, .static-slide-album3{
+        background-position: center;
+        background-size: cover;
+        width: 110px;
+        height: 110px;
+    }
+    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
+        display: block;
+        background-color: 868686;
+        opacity:0.85;
+        font-size:1.1em;
+        letter-spacing: 0.5px;
+    }
+    .static-slide-album:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
         font-size:0.95em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 600px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 264px;
-        height: 176px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 132px;
-        height: 176px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 132px;
-        height: 132px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
         letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px; 
     }
     .static-slide-album2:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.1em;
+        font-size:0.9em;
         letter-spacing: 0.5px; 
     }
     .static-slide-album3:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.05em;
+        font-size:0.80em;
         letter-spacing: 0.5px; 
     }
 }
-@media (min-width: 650px) {
+@media screen and (min-width: 200px)  and (max-width: 294px){
     .static-slide-film-h{
         background-position: center;
         background-size: cover;
-        width: 288px;
-        height: 192px;
+        width: 204px;
+        height: 135px;
     }
     .static-slide-film-v{
         background-position: center;
         background-size: cover;
-        width: 144px;
-        height: 192px;
+        width: 102px;
+        height: 135px;
     }
     .static-slide-album, .static-slide-album2, .static-slide-album3{
         background-position: center;
         background-size: cover;
-        width: 144px;
-        height: 144px;
+        width: 102px;
+        height: 102px;
     }
     .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.15em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 700px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 312px;
-        height: 222px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 156px;
-        height: 222px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 156px;
-        height: 156px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 768px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 350px;
-        height: 233px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 175px;
-        height: 233px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 175px;
-        height: 175px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 850px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 256px;
-        height: 170px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 128px;
-        height: 170px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 128px;
-        height: 128px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.1em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
         font-size:1em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 910px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 275px;
-        height: 183px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 137.5px;
-        height: 183px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 137.5px;
-        height: 137.5px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
         letter-spacing: 0.5px;
     }
     .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.1em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.1em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.05em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 992px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 302px;
-        height: 201px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 151px;
-        height: 201px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 151px;
-        height: 151px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.15em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.15em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 1050px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 240px;
-        height: 160px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 120px;
-        height: 160px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 120px;
-        height: 120px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.1em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
         font-size:0.90em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 1200px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 275px;
-        height: 183px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 137.5px;
-        height: 183px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 137.5px;
-        height: 137.5px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
         letter-spacing: 0.5px;
     }
     .static-slide-album2:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.1em;
+        font-size:0.80em;
         letter-spacing: 0.5px; 
     }
     .static-slide-album3:hover .overlay{
         display: block;
         background-color: 868686;
         opacity:0.85;
-        font-size:1.07em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 1400px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 323px;
-        height: 215px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 161.5px;
-        height: 215px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 161.5px;
-        height: 161.5px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 1600px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 247px;
-        height: 164px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 123.5px;
-        height: 164px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 148.5px;
-        height: 148.5px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.3em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.2em;
-        letter-spacing: 0.5px; 
-    }
-}
-@media (min-width: 1800px) {
-    .static-slide-film-h{
-        background-position: center;
-        background-size: cover;
-        width: 279px;
-        height: 186px;
-    }
-    .static-slide-film-v{
-        background-position: center;
-        background-size: cover;
-        width: 139.5px;
-        height: 186px;
-    }
-    .static-slide-album, .static-slide-album2, .static-slide-album3{
-        background-position: center;
-        background-size: cover;
-        width: 167.5px;
-        height: 167.5px;
-    }
-    .static-slide-film-h:hover .overlay, .static-slide-film-v:hover .overlay, .static-slide-album:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px;
-    }
-    .static-slide-album2:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
-        letter-spacing: 0.5px; 
-    }
-    .static-slide-album3:hover .overlay{
-        display: block;
-        background-color: 868686;
-        opacity:0.85;
-        font-size:1.4em;
+        font-size:0.80em;
         letter-spacing: 0.5px; 
     }
 }
@@ -1494,7 +1529,7 @@ body{
         height:30px;
         color:#f3ca06;
         padding-top:1px;
-        font-family:"almontewoodgrain", "almontewoodgrainie";
+        font-family:"almontewoodgrain";
         font-size:1.25em;
         font-style: italic;
     }
@@ -1502,7 +1537,7 @@ body{
         display:none;
     }
 }
-@media screen and (min-width: 299px) and (max-width: 766px){
+@media screen and (min-width: 300px) and (max-width: 767px){
     .subtitlestaticresponsive{   
         margin-top:15px;
         margin-bottom:5px;
@@ -1511,16 +1546,15 @@ body{
         height:30px;
         color:#f3ca06;
         padding-top:1px;
-        font-family:"almontewoodgrain", "almontewoodgrainie";
+        font-family:"almontewoodgrain";
         font-size:1.4em;
         font-style: italic;
-        padding-left:10px;
     }
     .subtitlestatic{
         display:none;
     }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px){
     .subtitlestatic{   
         margin-top:15px;
         margin-bottom:5px;
@@ -1529,34 +1563,21 @@ body{
         height:30px;
         color:#f3ca06;
         padding-top:1px;
-        font-family:"almontewoodgrain", "almontewoodgrainie";
+        font-family:"almontewoodgrain";
         font-size:1.4em;
         font-style: italic;
-        padding-left:10px;
     }
     .subtitlestaticresponsive{
         display:none;
     }
 }
-@media screen and (min-width: 200px) and (max-width: 399px){
-    .titlerowmarcStatic{
-        height:110px;
-    }
+.staticleft{
+    float:left;
+    width: 50%;
+    background-color: blue;
 }
-@media screen and (min-width: 400px) and (max-width: 449px){
-    .titlerowmarcStatic{
-        height:90px;
-    }
+.staticright{
+    float:left;
+    width: 50%;
+    background-color: red;
 }
-@media screen and (min-width: 450px) and (max-width: 767px){
-    .titlerowmarcStatic{
-        height:70px;
-    }
-}
-@media screen and (min-width: 405px) and (max-width: 440px){
-    .titlerowothermenusStatic{
-        height:40px;
-        padding-top:12px;
-    }
-}
-

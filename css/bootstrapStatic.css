@@ -1581,99 +1581,105 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
+
+.containerStatic {
   padding-right: 0px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 300px) {
-  .container {
+  .containerStatic {
     width: 292px;
   }
 }
 @media (min-width: 350px) {
-  .container {
+  .containerStatic {
     width: 341px;
   }
 }
 @media (min-width: 400px) {
-  .container {
+  .containerStatic {
     width: 390px;
   }
 }
 @media (min-width: 450px) {
-  .container {
+  .containerStatic {
     width: 439px;
   }
 }
 @media (min-width: 500px) {
-  .container {
+  .containerStatic {
     width: 488px;
   }
 }
 @media (min-width: 550px) {
-  .container {
+  .containerStatic {
     width: 537px;
   }
 }
 @media (min-width: 600px) {
-  .container {
+  .containerStatic {
     width: 585px;
   }
 }
 @media (min-width: 650px) {
-  .container {
+  .containerStatic {
     width: 634px;
   }
 }
 @media (min-width: 700px) {
-  .container {
+  .containerStatic {
     width: 684px;
   }
 }
 @media (min-width: 768px) {
-  .container {
+  .containerStatic {
     width: 760px;
   }
 }
 @media (min-width: 850px) {
-  .container {
+  .containerStatic {
     width: 830px;
   }
 }
+@media (min-width: 910px) {
+    .containerStatic {
+      width: 888px;
+    }
+  }
 @media (min-width: 992px) {
-  .container {
+  .containerStatic {
     width: 970px;
   }
 }
 @media (min-width: 1050px) {
-  .container {
+  .containerStatic {
     width: 1025px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .containerStatic {
     width: 1170px;
   }
 }
 @media (min-width: 1400px) {
-  .container {
+  .containerStatic {
     width: 1367px;
   }
 }
 @media (min-width: 1600px) {
-  .container {
+  .containerStatic {
     width: 1562px;
   }
 }
 @media (min-width: 1800px) {
-  .container {
+  .containerStatic {
     width: 1757px;
   }
 }
 
-.container-fluid {
+.containerStatic-fluid {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -4300,18 +4306,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-header,
-.container-fluid > .navbar-header,
-.container > .navbar-collapse,
-.container-fluid > .navbar-collapse {
+.containerStatic > .navbar-header,
+.containerStatic-fluid > .navbar-header,
+.containerStatic > .navbar-collapse,
+.containerStatic-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
 @media (min-width: 768px) {
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
-  .container > .navbar-collapse,
-  .container-fluid > .navbar-collapse {
+  .containerStatic > .navbar-header,
+  .containerStatic-fluid > .navbar-header,
+  .containerStatic > .navbar-collapse,
+  .containerStatic-fluid > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -4362,8 +4368,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: block;
 }
 @media (min-width: 768px) {
-  .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand {
+  .navbar > .containerStatic .navbar-brand,
+  .navbar > .containerStatic-fluid .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -5050,13 +5056,13 @@ a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
-.container .jumbotron,
-.container-fluid .jumbotron {
+.containerStatic .jumbotron,
+.containerStatic-fluid .jumbotron {
   padding-right: 15px;
   padding-left: 15px;
   border-radius: 6px;
 }
-.jumbotron .container {
+.jumbotron .containerStatic {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
@@ -5064,8 +5070,8 @@ a.badge:focus {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .jumbotron,
-  .container-fluid .jumbotron {
+  .containerStatic .jumbotron,
+  .containerStatic-fluid .jumbotron {
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -6538,10 +6544,10 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
-.container:before,
-.container:after,
-.container-fluid:before,
-.container-fluid:after,
+.containerStatic:before,
+.containerStatic:after,
+.containerStatic-fluid:before,
+.containerStatic-fluid:after,
 .row:before,
 .row:after,
 .form-horizontal .form-group:before,
@@ -6571,8 +6577,8 @@ button.close {
 }
 .clearfix:after,
 .dl-horizontal dd:after,
-.container:after,
-.container-fluid:after,
+.containerStatic:after,
+.containerStatic-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
 .btn-toolbar:after,
