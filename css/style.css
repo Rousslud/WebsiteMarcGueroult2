@@ -142,7 +142,7 @@ body{
 /*----------------------------------------------------------FONTS SETTINGS-----------------------------------------*/
 @font-face {
     font-family: 'almontewoodgrain';
-    src: url("../fonts/almontewoodgrain.otf"); 
+    src: url("../fonts/almontewoodgrain.woff"); 
 }	
 @font-face {
     font-family: "almontewoodgrainie";
@@ -559,6 +559,7 @@ body{
 /*---------------------------------------------------------- GENERAL -----------------------------------------------------------------------*/
 .about{
     font-family:"microgme", "microgmeie";
+    letter-spacing:1px;
     color:white;
     margin-left:12px;
     padding-top:5px;
@@ -581,9 +582,6 @@ body{
 
 .vis-item {
     font-size: 0.8em;
-}
-.studio img, .studiomobile img, .peoplehome img{
-    padding-top:10px;
 }
 .about h1{
     font-size:1.2em;
@@ -615,6 +613,8 @@ body{
 }
 .backtop a{
     color:white;
+    font-family: "microgme";
+    text-decoration: underline overline;
 }
 .backtop{
     margin-top:15px;
@@ -623,6 +623,25 @@ body{
     font-size:1.2em;
     color: #f3ca06;
 }
+/*----------------------------------------------------------PHOTOSWIPE -----------------------------------------------------------------------*/
+.my-gallery {
+    width: 100%;
+    float: left;
+  }
+  .my-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  .my-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 6px 6px 0;
+    width: 150px;
+  }
+  .my-gallery figcaption {
+    display: none;
+  }
+
 /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
 /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
 /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
@@ -1621,4 +1640,3 @@ body{
         padding-top:12px;
     }
 }
-
