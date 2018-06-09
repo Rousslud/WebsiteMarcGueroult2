@@ -568,21 +568,6 @@ body{
 .about img{
     width:100%;
 }
-#visualizationTimeline{
-    padding:15px 15px 15px 15px;
-}
-.vis-time-axis {
-    background-color: #868686;
-    font-size: 1em;
-}
-
-.vis-time-axis .vis-text {
-    color: white;
-}
-
-.vis-item {
-    font-size: 0.8em;
-}
 .about h1{
     font-size:1.2em;
     font-family:"microgbe", "microgbeie";
@@ -619,14 +604,30 @@ body{
 .backtop{
     margin-top:15px;
 }
+
+@media screen and (max-width: 310px){
 .listematosp{
-    font-size:1.2em;
+    font-size:0.8em;
     color: #f3ca06;
 }
+}
+@media screen and (min-width: 311px){
+    .listematosp{
+        font-size:1em;
+        color: #f3ca06;
+    }
+    }
+.mainmarc p{
+    padding-top:10px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
 /*----------------------------------------------------------PHOTOSWIPE -----------------------------------------------------------------------*/
 .my-gallery {
     width: 100%;
     float: left;
+    padding-left:15px;
   }
 .my-gallery img {
     width: 100%;
@@ -637,17 +638,227 @@ body{
     float: left;
     margin: 0 6px 6px 0;
 }
-.figurelandscape{
-    width: 300px;
-}
-.figureportrait{
-    width: 168px;
-}
-.figurelandscapemarc{
-    width: 212px;
-}
 .my-gallery figcaption {
     display: none;
+}
+/*----------------------------------------------------------RESPONSIVE -----------------------------------------------------------------------*/
+@media (max-width: 299px) {
+    .figurelandscapeabout{
+        width: 47.3%;
+    }
+    .figureportraitabout{
+        width: 30%;
+    }
+    .figureportraitaboutspecial{
+        padding-left:0;
+        width: 30%;
+    }
+    .figurelandscapeaboutspecial{
+        padding-left:0;
+        width: 47.3%;
+    }
+    .figurelandscapeaboutspecial2{
+        padding-left:25%;
+        width: 75%;
+    }
+    .figureportraitaboutspecial2{
+        width: 49%;
+        padding-left:19%
+    }
+    .figureportraitaboutspecial3{
+        width: 30%;
+        padding-left:0
+    }
+}
+@media (min-width: 300px) {
+    .figurelandscapeabout{
+        width: 47.3%;
+    }
+    .figureportraitabout{
+        width: 30%;
+    }
+    .figureportraitaboutspecial{
+        padding-left:1%;
+        width: 31%;
+    }
+    .figurelandscapeaboutspecial{
+        padding-left:0;
+        width: 47.3%;
+    }
+    .figurelandscapeaboutspecial2{
+        padding-left:25%;
+        width: 75%;
+    }
+    .figureportraitaboutspecial2{
+        width: 48%;
+        padding-left:18%
+    }
+    .figureportraitaboutspecial3{
+        width: 30%;
+        padding-left:0
+    }
+}
+@media (min-width: 350px) {
+    .mainmarc img{
+        width:300px;
+    }
+}
+@media (min-width: 400px) {
+    .figureportraitaboutspecial{
+        padding-left:2%;
+        width: 32%;
+    }
+    .figureportraitaboutspecial2{
+        width: 49%;
+        padding-left:19%
+    }
+}
+@media (min-width: 500px) {
+    .figureportraitaboutspecial{
+         padding-left:3%;
+        width: 33%
+    } 
+    .figureportraitaboutspecial2{
+        width: 50%;
+        padding-left:20%
+    }
+}
+@media (min-width: 600px) {
+    .figurelandscapeabout{
+        width: 32.1%;
+    }
+    .figureportraitabout{
+        width: 17.8%;
+    } 
+    .figureportraitaboutspecial{
+        padding-left:25%;
+       width:42.8%
+   } 
+    .figurelandscapeaboutspecial{
+        padding-left:16.8%;
+        width: 48.8%;
+    }
+    .figurelandscapeaboutspecial2{
+        padding-left:0;
+        width: 32.1%;
+    }
+    .figureportraitaboutspecial2{
+        width: 47.7%;
+        padding-left:30%
+    }
+    .figureportraitaboutspecial3{
+        width: 17.8%;
+        padding-left:0
+    }
+}
+@media (min-width: 768px) {
+    .mainmarc img{
+        width:225px;
+        padding-top:60px;
+    }
+}
+@media (min-width: 850px) {
+    .mainmarc img{
+        width:250px;
+        padding-top:35px;
+    }
+    .figurelandscapeabout{
+        width: 19%;
+    }
+    .figureportraitabout{
+        width: 13.5%;
+    } 
+    .figurelandscapeaboutspecial, .figurelandscapeaboutspecial2{
+        width: 19%;
+        padding-left:0px;
+    }
+    .figureportraitaboutspecial{
+        padding-left:30%;
+       width:43.5%
+   } 
+}
+@media (min-width: 992px) {
+    .mainmarc img{
+        width:300px;
+        padding-top:15px;
+    }
+}
+@media (min-width: 1200px) {
+    .figuremarc{
+        width: 300px;
+    }
+    .figurelandscapeabout{
+        width: 19%;
+    }
+    .figurelandscapeaboutspecial, .figurelandscapeaboutspecial2{
+        width: 19%;
+        padding-left:0px;
+    }
+    .figureportraitabout{
+        width: 11%;
+    }
+    .mainmarc img{
+        width:300px;
+        padding-top:0px;
+    }
+    .figureportraitaboutspecial{
+        padding-left:32%;
+       width:43%
+   } 
+}
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/*----------------------------------------------------------PAGE LIENS -----------------------------------------------------------------------*/
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+/*---------------------------------------------------------- GENERAL -----------------------------------------------------------------------*/
+.liens{
+    font-family:"microgme", "microgmeie";
+    letter-spacing:1px;
+    color:white;
+    margin-left:12px;
+    padding-top:5px;
+    margin-right:16px;
+}
+
+.liens a{
+    font-size:1em;
+    font-family:"microgbe", "microgbeie";
+    color:#f3ca06;
+}
+@media (max-width: 767px) {
+    .frame{
+        display:none
+    }
+    .frame2 {
+        display:inline-block;
+    }
+}
+@media (min-width: 768px) {
+    .frame2{
+        display:none;
+    }
+    .frame {
+        height: 60px;      /* equals max image height */
+        width: 60px;
+        white-space: nowrap;
+        text-align: center; margin: 1em 0;
+    }
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.liens img {
+    background: #3A6F9A;
+    vertical-align: middle;
+    max-height: 60px;
+    max-width: 60px;
 }
 
 /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
@@ -1661,6 +1872,7 @@ body{
 .contributionsshortcuts{
     padding-top:10px;
     padding-left:35px;
+    padding-right:30px;
 }
 
 .contributionsshortcuts a, .contributions a{
