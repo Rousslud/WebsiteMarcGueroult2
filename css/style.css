@@ -605,18 +605,19 @@ body{
     margin-top:15px;
 }
 
+
 @media screen and (max-width: 310px){
-.listematosp{
-    font-size:0.8em;
-    color: #f3ca06;
-}
+    .listematosp{
+        font-size:0.8em;
+        color: #f3ca06;
+    }
 }
 @media screen and (min-width: 311px){
     .listematosp{
         font-size:1em;
         color: #f3ca06;
     }
-    }
+}
 .mainmarc p{
     padding-top:10px;
     padding-left:5px;
@@ -669,6 +670,26 @@ body{
         width: 30%;
         padding-left:0
     }
+    .figureportraitaboutmatos{
+        padding-left:0;
+        width: 45%;
+    }
+    .figureportraitaboutmatos2{
+        padding-left:0;
+        width: 100%;
+    }
+    .minilegende{
+        font-size:0.6em;
+        height:50px;
+    }
+    .minilegende2{
+        font-size:0.6em;
+        height:50px;
+    }
+    .minilegende3{
+        font-size:0.6em;
+        height:70px;
+    }
 }
 @media (min-width: 300px) {
     .figurelandscapeabout{
@@ -697,10 +718,51 @@ body{
         width: 30%;
         padding-left:0
     }
+    .figureportraitaboutmatos{
+        padding-left:0;
+        width: 45%;
+    }
+    .figureportraitaboutmatos2{
+        padding-left:0;
+        width: 100%;
+    }    
+    .minilegende{
+        font-size:0.6em;
+        height:50px;
+    }
+    .minilegende2{
+        font-size:0.6em;
+        height:50px;
+    }
+    .minilegende3{
+        font-size:0.6em;
+        height:70px;
+    }
+
 }
 @media (min-width: 350px) {
     .mainmarc img{
         width:300px;
+    }
+    .figureportraitaboutmatos{
+        padding-left:0;
+        width: 30.5%;
+    }
+    .figureportraitaboutmatos2{
+        padding-left:0;
+        width: 45%;
+    }    
+    .minilegende{
+        font-size:0.7em;
+        height:55px;
+    }
+    .minilegende2{
+        font-size:0.7em;
+        height:80px;
+    }
+    .minilegende3{
+        font-size:0.7em;
+        height:70px;
     }
 }
 @media (min-width: 400px) {
@@ -713,6 +775,28 @@ body{
         padding-left:19%
     }
 }
+@media (min-width: 450px) {
+.figureportraitaboutmatos{
+    padding-left:0;
+    width: 23%;
+}
+.figureportraitaboutmatos2{
+    padding-left:0;
+    width: 45%;
+}    
+.minilegende{
+    font-size:0.7em;
+    height:55px;
+}
+.minilegende2{
+    font-size:0.7em;
+    height:80px;
+}
+.minilegende3{
+    font-size:0.7em;
+    height:70px;
+}
+}
 @media (min-width: 500px) {
     .figureportraitaboutspecial{
          padding-left:3%;
@@ -723,6 +807,28 @@ body{
         padding-left:20%
     }
 }
+@media (min-width: 550px) {
+    .figureportraitaboutmatos{
+        padding-left:0;
+        width: 18%;
+    }
+    .figureportraitaboutmatos2{
+        padding-left:0;
+        width: 30.5%;
+    }    
+    .minilegende{
+        font-size:0.6em;
+        height:55px;
+    }
+    .minilegende2{
+        font-size:0.6em;
+        height:80px;
+    }
+    .minilegende3{
+        font-size:0.6em;
+        height:70px;
+    }
+    }
 @media (min-width: 600px) {
     .figurelandscapeabout{
         width: 32.1%;
@@ -750,6 +856,14 @@ body{
         width: 17.8%;
         padding-left:0
     }
+    .figureportraitaboutmatos{
+        padding-left:0;
+        width: 13%;
+    }
+    .figureportraitaboutmatos2{
+        padding-left:0;
+        width: 23%;
+    }
 }
 @media (min-width: 768px) {
     .mainmarc img{
@@ -776,12 +890,24 @@ body{
         padding-left:30%;
        width:43.5%
    } 
+   .figureportraitaboutmatos{
+    padding-left:0;
+    width: 10%;
+    }
+    .figureportraitaboutmatos2{
+    padding-left:0;
+    width: 19%;
+    }
 }
 @media (min-width: 992px) {
     .mainmarc img{
         width:300px;
         padding-top:15px;
     }
+    .figureportraitaboutmatos{
+        padding-left:0;
+        width: 6.5%;
+        }
 }
 @media (min-width: 1200px) {
     .figuremarc{
